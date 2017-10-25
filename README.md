@@ -8,3 +8,5 @@ Timeline:
 - Alpha Release: October 31, 2017
 - Beta Release: November 21, 2017
 - Final Release: December 9, 2017
+
+[CryptoCurrency Data Source](https://api.coinmarketcap.com/v1/ticker/)
