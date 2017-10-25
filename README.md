@@ -10,4 +10,5 @@ Timeline:
 - Final Release: December 9, 2017
 
 [CryptoCurrency Data Source](https://api.coinmarketcap.com/v1/ticker/)
+
 [CryptoCurrency Data Source Documentation](https://coinmarketcap.com/api/)
