@@ -13,6 +13,7 @@ class CryptoTableViewCell: UITableViewCell {
     
     @IBOutlet weak var currencyName: UILabel!
     @IBOutlet weak var currencyPrice: UILabel!
+    @IBOutlet weak var currencyCap: UILabel!
     
     
     override func awakeFromNib() {

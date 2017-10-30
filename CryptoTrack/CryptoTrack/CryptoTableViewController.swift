@@ -21,6 +21,14 @@ class CryptoTableViewController: UITableViewController {
     public var cryptoCurrency8: Ticker?
     public var cryptoCurrency9: Ticker?
     public var cryptoCurrency10: Ticker?
+    public var cryptoCurrency11: Ticker?
+    public var cryptoCurrency12: Ticker?
+    public var cryptoCurrency13: Ticker?
+    public var cryptoCurrency14: Ticker?
+    public var cryptoCurrency15: Ticker?
+    public var cryptoCurrency16: Ticker?
+    public var cryptoCurrency17: Ticker?
+    public var cryptoCurrency18: Ticker?
     
     public var safeToUnwrap: Bool? = false
     
@@ -49,6 +57,24 @@ class CryptoTableViewController: UITableViewController {
                 self.cryptoCurrencies.append(self.cryptoCurrency9!)
                 self.cryptoCurrency10 = tickers[9]
                 self.cryptoCurrencies.append(self.cryptoCurrency10!)
+                self.cryptoCurrency11 = tickers[10]
+                self.cryptoCurrencies.append(self.cryptoCurrency11!)
+                self.cryptoCurrency12 = tickers[11]
+                self.cryptoCurrencies.append(self.cryptoCurrency12!)
+                self.cryptoCurrency13 = tickers[12]
+                self.cryptoCurrencies.append(self.cryptoCurrency13!)
+                self.cryptoCurrency14 = tickers[13]
+                self.cryptoCurrencies.append(self.cryptoCurrency14!)
+                self.cryptoCurrency15 = tickers[14]
+                self.cryptoCurrencies.append(self.cryptoCurrency15!)
+                self.cryptoCurrency16 = tickers[15]
+                self.cryptoCurrencies.append(self.cryptoCurrency16!)
+                self.cryptoCurrency17 = tickers[16]
+                self.cryptoCurrencies.append(self.cryptoCurrency17!)
+                self.cryptoCurrency18 = tickers[17]
+                self.cryptoCurrencies.append(self.cryptoCurrency18!)
+                
+                
                 self.tableView.reloadData()
                 
                 self.safeToUnwrap = true
@@ -94,11 +120,9 @@ class CryptoTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 10
+        return cryptoCurrencies.count
     }
 
-    var counter = 0
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cryptoCellid", for: indexPath) as! CryptoTableViewCell
         print(indexPath.row)
@@ -111,9 +135,13 @@ class CryptoTableViewController: UITableViewController {
             let currentCurrency = cryptoCurrencies[indexPath.row]
             cell.currencyName?.text = currentCurrency.name
             cell.currencyPrice?.text = "$" + "\(currentCurrency.priceUSD!)"
+            cell.currencyCap?.text = "$" + "\(currentCurrency.marketCapUSD!)"
             return cell
-        
         }
     }
-
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        return 85.00
+    }
 }
