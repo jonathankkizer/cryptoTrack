@@ -2,6 +2,21 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CryptoTrack.xcodeproj">
+      location = "group:/Users/jonathan/Documents/GitHub/iOSAppDevProject/CryptoTrack/CryptoTrack/CryptoCurrencyKit.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/jonathan/Documents/GitHub/iOSAppDevProject/CryptoTrack/CryptoTrack/Global.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/jonathan/Documents/GitHub/iOSAppDevProject/CryptoTrack/CryptoTrack/Graph.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/jonathan/Documents/GitHub/iOSAppDevProject/CryptoTrack/CryptoTrack/Request.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/jonathan/Documents/GitHub/iOSAppDevProject/CryptoTrack/CryptoTrack/Ticker.swift">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
