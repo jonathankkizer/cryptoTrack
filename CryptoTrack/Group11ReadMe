@@ -1,0 +1,12 @@
+Implementation Contribution:
+- Jonathan: TableView
+- Tyree: Login View
+- Greg: JSON fetching and parsing
+Grading Level:
+- Same grade for all members
+Differences:
+- We decided that a lot of the work on this would be in fetching and parsing the JSON API
+- Similarly, populating the tableview was difficult
+- We decided to work on these over creation and deletion in order to give us more time on these elements
+Special Instructions:
+- None
