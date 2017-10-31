@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45340E661FA8C29F00AE36CA /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45340E671FA8C29F00AE36CA /* FacebookLogin.framework */; };
+		45340E681FA8C2A900AE36CA /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45340E691FA8C2A900AE36CA /* FBSDKCoreKit.framework */; };
+		45340E6A1FA8C2B400AE36CA /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45340E6B1FA8C2B400AE36CA /* FacebookCore.framework */; };
+		45340E6D1FA8C57400AE36CA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45340E6C1FA8C57400AE36CA /* LoginViewController.swift */; };
+		45425E1F1FA8BD6F00355122 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; fileRef = 45425E201FA8BD6F00355122 /* FacebookCore */; };
+		7C9C2904882579358DB85DD3 /* Pods_CryptoTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287B7FA0748D713656D69C70 /* Pods_CryptoTrack.framework */; };
 		AB49BBE01F9F9FCC00BF2483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB49BBDF1F9F9FCC00BF2483 /* AppDelegate.swift */; };
 		AB49BBE51F9F9FCC00BF2483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB49BBE31F9F9FCC00BF2483 /* Main.storyboard */; };
 		AB49BBE81F9F9FCC00BF2483 /* CryptoTrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB49BBE61F9F9FCC00BF2483 /* CryptoTrack.xcdatamodeld */; };
@@ -23,6 +29,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		287B7FA0748D713656D69C70 /* Pods_CryptoTrack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoTrack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45340E671FA8C29F00AE36CA /* FacebookLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45340E691FA8C2A900AE36CA /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45340E6B1FA8C2B400AE36CA /* FacebookCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45340E6C1FA8C57400AE36CA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		45425E201FA8BD6F00355122 /* FacebookCore */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = FacebookCore; path = ../../../../../../../../Desktop/iOSAppDevProject/CryptoTrack/Pods/FacebookCore; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB49BBDC1F9F9FCC00BF2483 /* CryptoTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB49BBDF1F9F9FCC00BF2483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB49BBE41F9F9FCC00BF2483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,12 +44,14 @@
 		AB49BBEE1F9F9FCC00BF2483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB80413A1F9FF95B0094CA0E /* cryptoCurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cryptoCurrencyModel.swift; sourceTree = "<group>"; };
 		ABBF7B101FA7A03100190A15 /* CryptoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewController.swift; sourceTree = "<group>"; };
-		ABD4D89A1FA7991C00F0A959 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Global.swift; path = /Users/jonathan/Documents/GitHub/iOSAppDevProject/CryptoTrack/CryptoTrack/Global.swift; sourceTree = "<absolute>"; };
-		ABD4D89B1FA7991D00F0A959 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Request.swift; path = /Users/jonathan/Documents/GitHub/iOSAppDevProject/CryptoTrack/CryptoTrack/Request.swift; sourceTree = "<absolute>"; };
-		ABD4D89C1FA7991D00F0A959 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Graph.swift; path = /Users/jonathan/Documents/GitHub/iOSAppDevProject/CryptoTrack/CryptoTrack/Graph.swift; sourceTree = "<absolute>"; };
-		ABD4D89D1FA7991D00F0A959 /* CryptoCurrencyKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CryptoCurrencyKit.swift; path = /Users/jonathan/Documents/GitHub/iOSAppDevProject/CryptoTrack/CryptoTrack/CryptoCurrencyKit.swift; sourceTree = "<absolute>"; };
-		ABD4D89E1FA7991D00F0A959 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ticker.swift; path = /Users/jonathan/Documents/GitHub/iOSAppDevProject/CryptoTrack/CryptoTrack/Ticker.swift; sourceTree = "<absolute>"; };
+		ABD4D89A1FA7991C00F0A959 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Global.swift; path = /Users/Heisenberg/Desktop/iOSAppDevProject/CryptoTrack/CryptoTrack/Global.swift; sourceTree = "<absolute>"; };
+		ABD4D89B1FA7991D00F0A959 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Request.swift; path = /Users/Heisenberg/Desktop/iOSAppDevProject/CryptoTrack/CryptoTrack/Request.swift; sourceTree = "<absolute>"; };
+		ABD4D89C1FA7991D00F0A959 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Graph.swift; path = /Users/Heisenberg/Desktop/iOSAppDevProject/CryptoTrack/CryptoTrack/Graph.swift; sourceTree = "<absolute>"; };
+		ABD4D89D1FA7991D00F0A959 /* CryptoCurrencyKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CryptoCurrencyKit.swift; path = /Users/Heisenberg/Desktop/iOSAppDevProject/CryptoTrack/CryptoTrack/CryptoCurrencyKit.swift; sourceTree = "<absolute>"; };
+		ABD4D89E1FA7991D00F0A959 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ticker.swift; path = /Users/Heisenberg/Desktop/iOSAppDevProject/CryptoTrack/CryptoTrack/Ticker.swift; sourceTree = "<absolute>"; };
 		ABFD3F531FA7ADB200FB51C0 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+		D64E7F3B832B97C1154E45C0 /* Pods-CryptoTrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoTrack.release.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoTrack/Pods-CryptoTrack.release.xcconfig"; sourceTree = "<group>"; };
+		EC2DDE5518FB317B31C0CB7C /* Pods-CryptoTrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoTrack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoTrack/Pods-CryptoTrack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +59,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45340E6A1FA8C2B400AE36CA /* FacebookCore.framework in Frameworks */,
+				45340E681FA8C2A900AE36CA /* FBSDKCoreKit.framework in Frameworks */,
+				45340E661FA8C29F00AE36CA /* FacebookLogin.framework in Frameworks */,
+				45425E1F1FA8BD6F00355122 /* FacebookCore in Frameworks */,
+				7C9C2904882579358DB85DD3 /* Pods_CryptoTrack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +75,8 @@
 			children = (
 				AB49BBDE1F9F9FCC00BF2483 /* CryptoTrack */,
 				AB49BBDD1F9F9FCC00BF2483 /* Products */,
+				CF9947410C480487B2C0EA28 /* Pods */,
+				ACC9E081F7F8216FD148F775 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,8 +105,30 @@
 				AB49BBEB1F9F9FCC00BF2483 /* LaunchScreen.storyboard */,
 				AB49BBEE1F9F9FCC00BF2483 /* Info.plist */,
 				AB49BBE61F9F9FCC00BF2483 /* CryptoTrack.xcdatamodeld */,
+				45340E6C1FA8C57400AE36CA /* LoginViewController.swift */,
 			);
 			path = CryptoTrack;
+			sourceTree = "<group>";
+		};
+		ACC9E081F7F8216FD148F775 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45340E6B1FA8C2B400AE36CA /* FacebookCore.framework */,
+				45340E691FA8C2A900AE36CA /* FBSDKCoreKit.framework */,
+				45340E671FA8C29F00AE36CA /* FacebookLogin.framework */,
+				45425E201FA8BD6F00355122 /* FacebookCore */,
+				287B7FA0748D713656D69C70 /* Pods_CryptoTrack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF9947410C480487B2C0EA28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC2DDE5518FB317B31C0CB7C /* Pods-CryptoTrack.debug.xcconfig */,
+				D64E7F3B832B97C1154E45C0 /* Pods-CryptoTrack.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB49BBF11F9F9FCC00BF2483 /* Build configuration list for PBXNativeTarget "CryptoTrack" */;
 			buildPhases = (
+				3D22FD22B27E1C2323CC4FCB /* [CP] Check Pods Manifest.lock */,
 				AB49BBD81F9F9FCC00BF2483 /* Sources */,
 				AB49BBD91F9F9FCC00BF2483 /* Frameworks */,
 				AB49BBDA1F9F9FCC00BF2483 /* Resources */,
+				B0DD64583004CDD7BB083C09 /* [CP] Embed Pods Frameworks */,
+				3238E310E1C9563A0F18245B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,6 +201,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3238E310E1C9563A0F18245B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptoTrack/Pods-CryptoTrack-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D22FD22B27E1C2323CC4FCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoTrack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0DD64583004CDD7BB083C09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CryptoTrack/Pods-CryptoTrack-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CryptoTrack/Pods-CryptoTrack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AB49BBD81F9F9FCC00BF2483 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -170,6 +278,7 @@
 				ABD4D8A21FA7991D00F0A959 /* CryptoCurrencyKit.swift in Sources */,
 				ABFD3F541FA7ADB200FB51C0 /* CryptoTableViewCell.swift in Sources */,
 				AB49BBE01F9F9FCC00BF2483 /* AppDelegate.swift in Sources */,
+				45340E6D1FA8C57400AE36CA /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +338,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework/**";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -286,6 +396,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework/**";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -304,6 +415,7 @@
 		};
 		AB49BBF21F9F9FCC00BF2483 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC2DDE5518FB317B31C0CB7C /* Pods-CryptoTrack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -319,6 +431,7 @@
 		};
 		AB49BBF31F9F9FCC00BF2483 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D64E7F3B832B97C1154E45C0 /* Pods-CryptoTrack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
