@@ -78,7 +78,6 @@ class CryptoTableViewController: UITableViewController {
                 self.tableView.reloadData()
                 
                 self.safeToUnwrap = true
-                self.testing()
                 print("Cryptocurrencies Assigned!")
             case .failure(let error):
                 print("Houston, We've Had A Problem")
@@ -111,13 +110,6 @@ class CryptoTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
-    func testing() {
-        print("--Test Func--")
-        print(cryptoCurrency1!)
-        print(cryptoCurrency1!.id)
-        print("--END TEST FUNCTION--")
-    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cryptoCurrencies.count
@@ -134,6 +126,7 @@ class CryptoTableViewController: UITableViewController {
         } else {
             let currentCurrency = cryptoCurrencies[indexPath.row]
             cell.currencyName?.text = currentCurrency.name
+            cell.currencyID?.text = currentCurrency.symbol
             cell.currencyPrice?.text = "$" + "\(currentCurrency.priceUSD!)"
             cell.currencyCap?.text = "$" + "\(currentCurrency.marketCapUSD!)"
             return cell
@@ -142,6 +135,6 @@ class CryptoTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
-        return 85.00
+        return 100.00
     }
 }
