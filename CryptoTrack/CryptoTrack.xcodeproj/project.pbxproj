@@ -18,13 +18,12 @@
 		AB49BBE81F9F9FCC00BF2483 /* CryptoTrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB49BBE61F9F9FCC00BF2483 /* CryptoTrack.xcdatamodeld */; };
 		AB49BBEA1F9F9FCC00BF2483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB49BBE91F9F9FCC00BF2483 /* Assets.xcassets */; };
 		AB49BBED1F9F9FCC00BF2483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB49BBEB1F9F9FCC00BF2483 /* LaunchScreen.storyboard */; };
-		AB80413B1F9FF95B0094CA0E /* cryptoCurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80413A1F9FF95B0094CA0E /* cryptoCurrencyModel.swift */; };
+		AB7E52981FA8D6AD007FC11F /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E52931FA8D6AD007FC11F /* Graph.swift */; };
+		AB7E52991FA8D6AD007FC11F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E52941FA8D6AD007FC11F /* Request.swift */; };
+		AB7E529A1FA8D6AD007FC11F /* CryptoCurrencyKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E52951FA8D6AD007FC11F /* CryptoCurrencyKit.swift */; };
+		AB7E529B1FA8D6AD007FC11F /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E52961FA8D6AD007FC11F /* Ticker.swift */; };
+		AB7E529C1FA8D6AD007FC11F /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E52971FA8D6AD007FC11F /* Global.swift */; };
 		ABBF7B111FA7A03100190A15 /* CryptoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBF7B101FA7A03100190A15 /* CryptoTableViewController.swift */; };
-		ABD4D89F1FA7991D00F0A959 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4D89A1FA7991C00F0A959 /* Global.swift */; };
-		ABD4D8A01FA7991D00F0A959 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4D89B1FA7991D00F0A959 /* Request.swift */; };
-		ABD4D8A11FA7991D00F0A959 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4D89C1FA7991D00F0A959 /* Graph.swift */; };
-		ABD4D8A21FA7991D00F0A959 /* CryptoCurrencyKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4D89D1FA7991D00F0A959 /* CryptoCurrencyKit.swift */; };
-		ABD4D8A31FA7991D00F0A959 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4D89E1FA7991D00F0A959 /* Ticker.swift */; };
 		ABFD3F541FA7ADB200FB51C0 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFD3F531FA7ADB200FB51C0 /* CryptoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,13 +41,12 @@
 		AB49BBE91F9F9FCC00BF2483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB49BBEC1F9F9FCC00BF2483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB49BBEE1F9F9FCC00BF2483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB80413A1F9FF95B0094CA0E /* cryptoCurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cryptoCurrencyModel.swift; sourceTree = "<group>"; };
+		AB7E52931FA8D6AD007FC11F /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Graph.swift; path = "../../../../../Downloads/CryptoCurrencyKit-master/Sources/Graph.swift"; sourceTree = "<group>"; };
+		AB7E52941FA8D6AD007FC11F /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Request.swift; path = "../../../../../Downloads/CryptoCurrencyKit-master/Sources/Request.swift"; sourceTree = "<group>"; };
+		AB7E52951FA8D6AD007FC11F /* CryptoCurrencyKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CryptoCurrencyKit.swift; path = "../../../../../Downloads/CryptoCurrencyKit-master/Sources/CryptoCurrencyKit.swift"; sourceTree = "<group>"; };
+		AB7E52961FA8D6AD007FC11F /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ticker.swift; path = "../../../../../Downloads/CryptoCurrencyKit-master/Sources/Ticker.swift"; sourceTree = "<group>"; };
+		AB7E52971FA8D6AD007FC11F /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Global.swift; path = "../../../../../Downloads/CryptoCurrencyKit-master/Sources/Global.swift"; sourceTree = "<group>"; };
 		ABBF7B101FA7A03100190A15 /* CryptoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewController.swift; sourceTree = "<group>"; };
-		ABD4D89A1FA7991C00F0A959 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Global.swift; path = /Users/Heisenberg/Desktop/iOSAppDevProject/CryptoTrack/CryptoTrack/Global.swift; sourceTree = "<absolute>"; };
-		ABD4D89B1FA7991D00F0A959 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Request.swift; path = /Users/Heisenberg/Desktop/iOSAppDevProject/CryptoTrack/CryptoTrack/Request.swift; sourceTree = "<absolute>"; };
-		ABD4D89C1FA7991D00F0A959 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Graph.swift; path = /Users/Heisenberg/Desktop/iOSAppDevProject/CryptoTrack/CryptoTrack/Graph.swift; sourceTree = "<absolute>"; };
-		ABD4D89D1FA7991D00F0A959 /* CryptoCurrencyKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CryptoCurrencyKit.swift; path = /Users/Heisenberg/Desktop/iOSAppDevProject/CryptoTrack/CryptoTrack/CryptoCurrencyKit.swift; sourceTree = "<absolute>"; };
-		ABD4D89E1FA7991D00F0A959 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ticker.swift; path = /Users/Heisenberg/Desktop/iOSAppDevProject/CryptoTrack/CryptoTrack/Ticker.swift; sourceTree = "<absolute>"; };
 		ABFD3F531FA7ADB200FB51C0 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
 		D64E7F3B832B97C1154E45C0 /* Pods-CryptoTrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoTrack.release.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoTrack/Pods-CryptoTrack.release.xcconfig"; sourceTree = "<group>"; };
 		EC2DDE5518FB317B31C0CB7C /* Pods-CryptoTrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoTrack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoTrack/Pods-CryptoTrack.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,19 +91,18 @@
 			children = (
 				ABBF7B101FA7A03100190A15 /* CryptoTableViewController.swift */,
 				ABFD3F531FA7ADB200FB51C0 /* CryptoTableViewCell.swift */,
-				ABD4D89D1FA7991D00F0A959 /* CryptoCurrencyKit.swift */,
-				ABD4D89A1FA7991C00F0A959 /* Global.swift */,
-				ABD4D89C1FA7991D00F0A959 /* Graph.swift */,
-				ABD4D89B1FA7991D00F0A959 /* Request.swift */,
-				ABD4D89E1FA7991D00F0A959 /* Ticker.swift */,
 				AB49BBDF1F9F9FCC00BF2483 /* AppDelegate.swift */,
+				45340E6C1FA8C57400AE36CA /* LoginViewController.swift */,
 				AB49BBE31F9F9FCC00BF2483 /* Main.storyboard */,
-				AB80413A1F9FF95B0094CA0E /* cryptoCurrencyModel.swift */,
+				AB7E52951FA8D6AD007FC11F /* CryptoCurrencyKit.swift */,
+				AB7E52971FA8D6AD007FC11F /* Global.swift */,
+				AB7E52931FA8D6AD007FC11F /* Graph.swift */,
+				AB7E52941FA8D6AD007FC11F /* Request.swift */,
+				AB7E52961FA8D6AD007FC11F /* Ticker.swift */,
 				AB49BBE91F9F9FCC00BF2483 /* Assets.xcassets */,
 				AB49BBEB1F9F9FCC00BF2483 /* LaunchScreen.storyboard */,
 				AB49BBEE1F9F9FCC00BF2483 /* Info.plist */,
 				AB49BBE61F9F9FCC00BF2483 /* CryptoTrack.xcdatamodeld */,
-				45340E6C1FA8C57400AE36CA /* LoginViewController.swift */,
 			);
 			path = CryptoTrack;
 			sourceTree = "<group>";
@@ -268,15 +265,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABD4D8A01FA7991D00F0A959 /* Request.swift in Sources */,
-				ABD4D8A11FA7991D00F0A959 /* Graph.swift in Sources */,
+				AB7E52981FA8D6AD007FC11F /* Graph.swift in Sources */,
+				AB7E52991FA8D6AD007FC11F /* Request.swift in Sources */,
 				AB49BBE81F9F9FCC00BF2483 /* CryptoTrack.xcdatamodeld in Sources */,
 				ABBF7B111FA7A03100190A15 /* CryptoTableViewController.swift in Sources */,
-				ABD4D8A31FA7991D00F0A959 /* Ticker.swift in Sources */,
-				AB80413B1F9FF95B0094CA0E /* cryptoCurrencyModel.swift in Sources */,
-				ABD4D89F1FA7991D00F0A959 /* Global.swift in Sources */,
-				ABD4D8A21FA7991D00F0A959 /* CryptoCurrencyKit.swift in Sources */,
+				AB7E529B1FA8D6AD007FC11F /* Ticker.swift in Sources */,
+				AB7E529C1FA8D6AD007FC11F /* Global.swift in Sources */,
 				ABFD3F541FA7ADB200FB51C0 /* CryptoTableViewCell.swift in Sources */,
+				AB7E529A1FA8D6AD007FC11F /* CryptoCurrencyKit.swift in Sources */,
 				AB49BBE01F9F9FCC00BF2483 /* AppDelegate.swift in Sources */,
 				45340E6D1FA8C57400AE36CA /* LoginViewController.swift in Sources */,
 			);

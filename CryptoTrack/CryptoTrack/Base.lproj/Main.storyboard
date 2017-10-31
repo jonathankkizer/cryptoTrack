@@ -20,29 +20,20 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UserName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tgk-Ts-Wuf">
                                 <rect key="frame" x="114" y="259" width="147" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Q7S-hM-e36"/>
-                                    <constraint firstAttribute="width" constant="147" id="XKo-Hd-BOC"/>
-                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Its-Td-C0r">
                                 <rect key="frame" x="114" y="332" width="147" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="147" id="eYB-p5-ej8"/>
-                                    <constraint firstAttribute="height" constant="30" id="moJ-Ch-zcR"/>
-                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORw-gr-ptQ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORw-gr-ptQ">
                                 <rect key="frame" x="132" y="442" width="111" height="7"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="ptm-lW-72j"/>
-                                    <constraint firstAttribute="width" constant="111" id="tMI-w2-VwV"/>
+                                    <constraint firstAttribute="height" constant="7" id="ugG-sp-JEC"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -53,18 +44,23 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.67679885815363861" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0046007493510842323" green="0.67613261938095093" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Tgk-Ts-Wuf" firstAttribute="centerX" secondItem="ORw-gr-ptQ" secondAttribute="centerX" id="CmK-Zd-MGS"/>
-                            <constraint firstItem="ORw-gr-ptQ" firstAttribute="centerY" secondItem="2d0-lE-Nbg" secondAttribute="centerY" id="ZbQ-kN-QIz"/>
-                            <constraint firstItem="Its-Td-C0r" firstAttribute="top" secondItem="Tgk-Ts-Wuf" secondAttribute="bottom" constant="43" id="cd9-hN-a8q"/>
-                            <constraint firstItem="ORw-gr-ptQ" firstAttribute="centerX" secondItem="2d0-lE-Nbg" secondAttribute="centerX" id="lNo-IN-2ud"/>
-                            <constraint firstItem="Tgk-Ts-Wuf" firstAttribute="top" secondItem="PXJ-D9-3lB" secondAttribute="top" constant="195" id="n7g-zC-7uG"/>
-                            <constraint firstItem="Tgk-Ts-Wuf" firstAttribute="leading" secondItem="Its-Td-C0r" secondAttribute="leading" id="vD8-Ix-dhz"/>
+                            <constraint firstItem="Tgk-Ts-Wuf" firstAttribute="leading" secondItem="PXJ-D9-3lB" secondAttribute="leading" constant="114" id="Nqv-ce-whc"/>
+                            <constraint firstItem="Tgk-Ts-Wuf" firstAttribute="top" secondItem="PXJ-D9-3lB" secondAttribute="top" constant="195" id="VcI-Gn-jlr"/>
+                            <constraint firstItem="ORw-gr-ptQ" firstAttribute="leading" secondItem="PXJ-D9-3lB" secondAttribute="leading" constant="132" id="Z7o-pz-dlz"/>
+                            <constraint firstItem="Its-Td-C0r" firstAttribute="centerX" secondItem="ORw-gr-ptQ" secondAttribute="centerX" id="c7J-na-7Rn"/>
+                            <constraint firstItem="Its-Td-C0r" firstAttribute="top" secondItem="Tgk-Ts-Wuf" secondAttribute="bottom" constant="43" id="d6J-4f-hZz"/>
+                            <constraint firstItem="Tgk-Ts-Wuf" firstAttribute="trailing" secondItem="Its-Td-C0r" secondAttribute="trailing" id="eMj-SR-SfV"/>
+                            <constraint firstItem="Tgk-Ts-Wuf" firstAttribute="leading" secondItem="Its-Td-C0r" secondAttribute="leading" id="mjh-6z-tph"/>
+                            <constraint firstItem="ORw-gr-ptQ" firstAttribute="top" secondItem="Its-Td-C0r" secondAttribute="bottom" constant="80" id="qd2-ci-egZ"/>
+                            <constraint firstItem="Tgk-Ts-Wuf" firstAttribute="centerX" secondItem="2d0-lE-Nbg" secondAttribute="centerX" id="u0l-oG-vEJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PXJ-D9-3lB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5aF-Qv-f4o"/>
+                    <navigationItem key="navigationItem" id="5aF-Qv-f4o">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="BSI-pY-AOW"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="_login_button" destination="ORw-gr-ptQ" id="rKi-EF-rIo"/>
                         <outlet property="_password" destination="Its-Td-C0r" id="0xc-Kc-4sZ"/>
@@ -78,6 +74,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Mng-DB-g5J">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Yf-g9-lQA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="Qss-ln-E2m" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3dc-J5-yzu">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -87,7 +84,6 @@
                         <segue destination="yVI-uN-r2g" kind="relationship" relationship="rootViewController" id="Dej-8T-T8E"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Yf-g9-lQA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-359.19999999999999" y="180.35982008995504"/>
         </scene>

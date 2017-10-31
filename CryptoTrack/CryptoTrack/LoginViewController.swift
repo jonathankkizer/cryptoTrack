@@ -23,7 +23,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         let preferences = UserDefaults.standard
+        let preferences = UserDefaults.standard
+        
+        self.title = "User Login"
         
         if (preferences.object(forKey: "session") != nil)
         {

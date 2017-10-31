@@ -8,5 +8,4 @@ target 'CryptoTrack' do
     pod 'FacebookCore'
     pod 'FacebookLogin'
 
-
 end

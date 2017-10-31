@@ -10,7 +10,9 @@ import UIKit
 
 class CryptoTableViewController: UITableViewController {
 
+    // cryptoCurrencies is array that contains the below cryptoCurrencyX objects; used to access later when drawing views, etc. with indexPath.row
     public var cryptoCurrencies = [Ticker]()
+    // instantied to reference the tickers return results in cryptocurrencykit closure below
     public var cryptoCurrency1: Ticker?
     public var cryptoCurrency2: Ticker?
     public var cryptoCurrency3: Ticker?
@@ -32,6 +34,8 @@ class CryptoTableViewController: UITableViewController {
     
     public var safeToUnwrap: Bool? = false
     
+    // calls out to cryptoCurrencyKit, and sets previously created cryptoCurrencyX equal to return results
+    // then flips safeToUnwrap and reloads view; necessary because otherwise view attempts to load view which returns nil values
     func getCurrencies() {
         CryptoCurrencyKit.fetchTickers { r in
             switch r {
@@ -74,9 +78,9 @@ class CryptoTableViewController: UITableViewController {
                 self.cryptoCurrency18 = tickers[17]
                 self.cryptoCurrencies.append(self.cryptoCurrency18!)
                 
-                
+                // reloads tableView once data has been fetched and parsed
                 self.tableView.reloadData()
-                
+                // kicks into "else" condition in tableView so as to force unwrap previous Ticker objects
                 self.safeToUnwrap = true
                 print("Cryptocurrencies Assigned!")
             case .failure(let error):
@@ -89,7 +93,7 @@ class CryptoTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getCurrencies()
-        self.tableView.reloadData()
+        //self.tableView.reloadData()
         self.title = "Cryptocurrencies"
         
         // Uncomment the following line to preserve selection between presentations
@@ -124,6 +128,7 @@ class CryptoTableViewController: UITableViewController {
             cell.currencyPrice?.text = "🛠🛠🛠"
             return cell
         } else {
+            // draws cells once data has been fetched and declared safe to force unwrap; uses indexPath.row to determine which object in CryptoCurrencies to draw where; returns drawn cell
             let currentCurrency = cryptoCurrencies[indexPath.row]
             cell.currencyName?.text = currentCurrency.name
             cell.currencyID?.text = currentCurrency.symbol
@@ -133,6 +138,7 @@ class CryptoTableViewController: UITableViewController {
         }
     }
     
+    // programmatically sets cell height
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
         return 100.00
