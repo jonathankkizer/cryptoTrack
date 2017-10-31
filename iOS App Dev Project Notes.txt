@@ -14,3 +14,5 @@ http://benscheirman.com/2017/06/ultimate-guide-to-json-parsing-with-swift-4/
 http://matteomanferdini.com/network-requests-rest-apis-ios-swift/
 
 Currently looking at: https://medium.com/@sdrzn/networking-and-persistence-with-json-in-swift-4-c400ecab402d
+
+USING THIS PACKAGE: https://github.com/iCell/CryptoCurrencyKit
