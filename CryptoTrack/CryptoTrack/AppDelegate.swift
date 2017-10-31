@@ -88,6 +88,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    /*
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?)  -> bool {
+        SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOPtions: launchOptions)
+        return true
+    }
+ */
 
 }
 
