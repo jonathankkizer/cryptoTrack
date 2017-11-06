@@ -146,5 +146,19 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let CryptoTableViewController = segue.destination as? CryptoTableViewController {
+            
+            // How to retitle "Back" button so it doesn't just inherent the title of the last screen
+            let backItem = UIBarButtonItem()
+            backItem.title = "Log Out"
+            navigationItem.backBarButtonItem = backItem
+        }
+        
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
 
 }
