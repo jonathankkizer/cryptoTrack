@@ -7,5 +7,6 @@ target 'CryptoTrack' do
   # Pods for CryptoTrack
     pod 'FacebookCore'
     pod 'FacebookLogin'
+    pod 'CryptoCurrencyKit'
 
 end

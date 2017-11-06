@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CryptoCurrencyKit
 
 class CryptoTableViewController: UITableViewController {
 
@@ -94,7 +95,7 @@ class CryptoTableViewController: UITableViewController {
         super.viewDidLoad()
         getCurrencies()
         //self.tableView.reloadData()
-        self.title = "Cryptocurrencies"
+        self.title = "CryptoCurrencies"
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -132,8 +133,8 @@ class CryptoTableViewController: UITableViewController {
             let currentCurrency = cryptoCurrencies[indexPath.row]
             cell.currencyName?.text = currentCurrency.name
             cell.currencyID?.text = currentCurrency.symbol
-            cell.currencyPrice?.text = "$" + "\(currentCurrency.priceUSD!)"
-            cell.currencyCap?.text = "$" + "\(currentCurrency.marketCapUSD!)"
+            cell.currencyPrice?.text = formatCurrency(value: (currentCurrency.priceUSD)!)
+            cell.currencyCap?.text = formatCurrency(value: (currentCurrency.marketCapUSD)!)
             return cell
         }
     }
@@ -143,4 +144,27 @@ class CryptoTableViewController: UITableViewController {
     {
         return 100.00
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let CryptoCurrencyViewController = segue.destination as? CryptoCurrencyViewController {
+            
+            let indexSelectedRow = tableView.indexPathForSelectedRow?.row
+            print(cryptoCurrencies[indexSelectedRow!])
+            
+            CryptoCurrencyViewController.cryptoCurrency = cryptoCurrencies[indexSelectedRow!]
+            
+            // How to retitle "Back" button so it doesn't just inherent the title of the last screen
+            let backItem = UIBarButtonItem()
+            backItem.title = "Back"
+            navigationItem.backBarButtonItem = backItem
+        }
+        
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    
+    
 }
+
+
