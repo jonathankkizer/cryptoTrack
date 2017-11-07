@@ -3,49 +3,49 @@
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "cryptoTrack-Updated-40.png",
+      "filename" : "cryptoTrack-40.png",
       "scale" : "2x"
     },
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "cryptoTrack-Updated-60.png",
+      "filename" : "cryptoTrack-60.png",
       "scale" : "3x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "cryptoTrack-Updated-58.png",
+      "filename" : "cryptoTrack-58.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "cryptoTrack-Updated-87.png",
+      "filename" : "cryptoTrack-87.png",
       "scale" : "3x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "cryptoTrack-Updated-80.png",
+      "filename" : "cryptoTrack-80.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "cryptoTrack-Updated-121.png",
+      "filename" : "cryptoTrack-120.png",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "cryptoTrack-Updated-120.png",
+      "filename" : "cryptoTrack-121.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "cryptoTrack-Updated-180.png",
+      "filename" : "cryptoTrack-180.png",
       "scale" : "3x"
     },
     {
@@ -56,7 +56,7 @@
     {
       "size" : "20x20",
       "idiom" : "ipad",
-      "filename" : "cryptoTrack-Updated-41.png",
+      "filename" : "cryptoTrack-41.png",
       "scale" : "2x"
     },
     {
@@ -67,7 +67,7 @@
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "cryptoTrack-Updated-59.png",
+      "filename" : "cryptoTrack-59.png",
       "scale" : "2x"
     },
     {
@@ -78,7 +78,7 @@
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "cryptoTrack-Updated-81.png",
+      "filename" : "cryptoTrack-81.png",
       "scale" : "2x"
     },
     {
@@ -89,19 +89,19 @@
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "cryptoTrack-Updated-152.png",
+      "filename" : "cryptoTrack-152.png",
       "scale" : "2x"
     },
     {
       "size" : "83.5x83.5",
       "idiom" : "ipad",
-      "filename" : "cryptoTrack-Updated-167.png",
+      "filename" : "cryptoTrack-167.png",
       "scale" : "2x"
     },
     {
       "size" : "1024x1024",
       "idiom" : "ios-marketing",
-      "filename" : "cryptoTrack-Updated-1024.png",
+      "filename" : "cryptoTrack-1024.png",
       "scale" : "1x"
     }
   ],

@@ -8,6 +8,7 @@
 
 import Foundation
 
+// receives a double and converts it to a currency format (USD)
 func formatCurrency(value: Double) -> String {
     let formatter = NumberFormatter()
     formatter.numberStyle = .currency
