@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,18 +20,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CryptoTrack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWw-aW-3dI">
-                                <rect key="frame" x="16" y="276" width="343" height="114"/>
+                                <rect key="frame" x="16" y="388" width="343" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="0AP-pN-FH3"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" highlightedImage="Image" translatesAutoresizingMaskIntoConstraints="NO" id="c5Z-8b-rlZ">
+                                <rect key="frame" x="67" y="140" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="c5Z-8b-rlZ" secondAttribute="height" multiplier="1:1" id="knL-pT-9HF"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.2196078431372549" green="0.7803921568627451" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="iWw-aW-3dI" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="3Dg-dl-8Rz"/>
-                            <constraint firstItem="iWw-aW-3dI" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="74d-qM-RGV"/>
-                            <constraint firstItem="iWw-aW-3dI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="256" id="Lpq-3D-IGf"/>
-                            <constraint firstItem="iWw-aW-3dI" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="b2A-rd-emn"/>
+                            <constraint firstItem="iWw-aW-3dI" firstAttribute="top" secondItem="c5Z-8b-rlZ" secondAttribute="bottom" constant="8" symbolic="YES" id="6vd-Sj-bZc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iWw-aW-3dI" secondAttribute="bottom" constant="165" id="Yl8-nD-Woc"/>
+                            <constraint firstItem="iWw-aW-3dI" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="cy3-R9-cK1"/>
+                            <constraint firstItem="iWw-aW-3dI" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="hci-14-eHl"/>
+                            <constraint firstItem="c5Z-8b-rlZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="ndp-kn-9dM"/>
+                            <constraint firstItem="c5Z-8b-rlZ" firstAttribute="centerX" secondItem="iWw-aW-3dI" secondAttribute="centerX" id="tto-Lh-hxn"/>
+                            <constraint firstItem="c5Z-8b-rlZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="wjh-Fg-ulh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -40,4 +53,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="512" height="512"/>
+    </resources>
 </document>
