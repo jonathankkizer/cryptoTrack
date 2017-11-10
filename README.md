@@ -8,6 +8,11 @@ Timeline:
 - Beta Release: November 21, 2017
 - Final Release: December 9, 2017
 
+Icon Colors:
+- Blue Icon color: 0 172 192
+- White Icon color: 255 255 255
+- Grey Icon Color: 45 45 45
+
 [CryptoCurrency Data Source](https://api.coinmarketcap.com/v1/ticker/)
 
 [CryptoCurrency Data Source Documentation](https://coinmarketcap.com/api/)

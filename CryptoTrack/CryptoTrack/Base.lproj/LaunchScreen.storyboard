@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -28,22 +27,19 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" highlightedImage="Image" translatesAutoresizingMaskIntoConstraints="NO" id="c5Z-8b-rlZ">
-                                <rect key="frame" x="67" y="140" width="240" height="240"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="c5Z-8b-rlZ" secondAttribute="height" multiplier="1:1" id="knL-pT-9HF"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" highlightedImage="Image" translatesAutoresizingMaskIntoConstraints="NO" id="XN6-M7-e1u">
+                                <rect key="frame" x="67" y="167" width="240" height="239"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.2196078431372549" green="0.7803921568627451" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.1764705882352941" green="0.1764705882352941" blue="0.1764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="iWw-aW-3dI" firstAttribute="top" secondItem="c5Z-8b-rlZ" secondAttribute="bottom" constant="8" symbolic="YES" id="6vd-Sj-bZc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XN6-M7-e1u" secondAttribute="bottom" constant="261" id="3c5-Z5-sQM"/>
+                            <constraint firstItem="XN6-M7-e1u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="5Wy-sd-Q8X"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iWw-aW-3dI" secondAttribute="bottom" constant="165" id="Yl8-nD-Woc"/>
                             <constraint firstItem="iWw-aW-3dI" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="cy3-R9-cK1"/>
+                            <constraint firstItem="XN6-M7-e1u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="147" id="dGe-8L-MBh"/>
                             <constraint firstItem="iWw-aW-3dI" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="hci-14-eHl"/>
-                            <constraint firstItem="c5Z-8b-rlZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="ndp-kn-9dM"/>
-                            <constraint firstItem="c5Z-8b-rlZ" firstAttribute="centerX" secondItem="iWw-aW-3dI" secondAttribute="centerX" id="tto-Lh-hxn"/>
-                            <constraint firstItem="c5Z-8b-rlZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="wjh-Fg-ulh"/>
+                            <constraint firstItem="XN6-M7-e1u" firstAttribute="centerX" secondItem="iWw-aW-3dI" secondAttribute="centerX" id="q0u-lQ-hWo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
