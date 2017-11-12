@@ -22,6 +22,7 @@
 		AB49BBEA1F9F9FCC00BF2483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB49BBE91F9F9FCC00BF2483 /* Assets.xcassets */; };
 		AB49BBED1F9F9FCC00BF2483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB49BBEB1F9F9FCC00BF2483 /* LaunchScreen.storyboard */; };
 		AB7E00A11FB8F29600C2EE3D /* userTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E00A01FB8F29600C2EE3D /* userTableViewController.swift */; };
+		AB85C7A91FB9106100BF4C3B /* cryptoSortPercentChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB85C7A81FB9106100BF4C3B /* cryptoSortPercentChange.swift */; };
 		AB8A3D5E1FB0D51400AC6D3D /* CryptoCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A3D5D1FB0D51400AC6D3D /* CryptoCurrencyViewController.swift */; };
 		AB8A3D601FB0DD0E00AC6D3D /* formatCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A3D5F1FB0DD0E00AC6D3D /* formatCurrency.swift */; };
 		ABBF7B111FA7A03100190A15 /* CryptoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBF7B101FA7A03100190A15 /* CryptoTableViewController.swift */; };
@@ -46,6 +47,7 @@
 		AB49BBEC1F9F9FCC00BF2483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB49BBEE1F9F9FCC00BF2483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB7E00A01FB8F29600C2EE3D /* userTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userTableViewController.swift; sourceTree = "<group>"; };
+		AB85C7A81FB9106100BF4C3B /* cryptoSortPercentChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cryptoSortPercentChange.swift; sourceTree = "<group>"; };
 		AB8A3D5D1FB0D51400AC6D3D /* CryptoCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyViewController.swift; sourceTree = "<group>"; };
 		AB8A3D5F1FB0DD0E00AC6D3D /* formatCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formatCurrency.swift; sourceTree = "<group>"; };
 		ABBF7B101FA7A03100190A15 /* CryptoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				AB49BBE31F9F9FCC00BF2483 /* Main.storyboard */,
+				AB85C7A81FB9106100BF4C3B /* cryptoSortPercentChange.swift */,
 				AB7E00A01FB8F29600C2EE3D /* userTableViewController.swift */,
 				AB47F7FA1FB8E90500EAAD02 /* createUserViewController.swift */,
 				ABBF7B101FA7A03100190A15 /* CryptoTableViewController.swift */,
@@ -274,6 +277,7 @@
 				AB47F7B11FB638E600EAAD02 /* topPerformerTableViewCell.swift in Sources */,
 				AB47F76A1FB5358F00EAAD02 /* loginTableViewController.swift in Sources */,
 				AB47F7FB1FB8E90500EAAD02 /* createUserViewController.swift in Sources */,
+				AB85C7A91FB9106100BF4C3B /* cryptoSortPercentChange.swift in Sources */,
 				AB7E00A11FB8F29600C2EE3D /* userTableViewController.swift in Sources */,
 				ABFD3F541FA7ADB200FB51C0 /* CryptoTableViewCell.swift in Sources */,
 				AB8A3D5E1FB0D51400AC6D3D /* CryptoCurrencyViewController.swift in Sources */,

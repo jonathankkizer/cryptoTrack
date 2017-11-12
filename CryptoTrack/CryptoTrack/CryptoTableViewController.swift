@@ -121,28 +121,47 @@ class CryptoTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cryptoCellid", for: indexPath) as! CryptoTableViewCell
         print(indexPath.row)
         
         if safeToUnwrap == false {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cryptoCellid", for: indexPath) as! CryptoTableViewCell
             cell.currencyName?.text = "🛠🛠🛠"
             cell.currencyPrice?.text = "🛠🛠🛠"
             return cell
         } else {
             // draws cells once data has been fetched and declared safe to force unwrap; uses indexPath.row to determine which object in CryptoCurrencies to draw where; returns drawn cell
-            let currentCurrency = cryptoCurrencies[indexPath.row]
-            cell.currencyName?.text = currentCurrency.name
-            cell.currencyID?.text = currentCurrency.symbol
-            cell.currencyPrice?.text = formatCurrency(value: (currentCurrency.priceUSD)!)
-            cell.currencyCap?.text = formatCurrency(value: (currentCurrency.marketCapUSD)!)
-            return cell
+            if indexPath.row == 0 {
+                let sortedCurrencies = cryptoCurrencies.sorted(by: { $0.percentChange1h! > $1.percentChange1h!})
+                let cell = tableView.dequeueReusableCell(withIdentifier: "topPerformer", for: indexPath) as! topPerformerTableViewCell
+                cell.oneCurr.text = sortedCurrencies[0].name
+                cell.onePctChg.text = "\(sortedCurrencies[0].percentChange1h!)" + "%"
+                cell.twoCurr.text = sortedCurrencies[1].name
+                cell.twoPctChg.text = "\(sortedCurrencies[1].percentChange1h!)" + "%"
+                cell.threeCurr.text = sortedCurrencies[2].name
+                cell.threePctChg.text = "\(sortedCurrencies[2].percentChange1h!)" + "%"
+                
+                return cell
+            } else {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "cryptoCellid", for: indexPath) as! CryptoTableViewCell
+                let currentCurrency = cryptoCurrencies[indexPath.row-1]
+                cell.currencyName?.text = currentCurrency.name
+                cell.currencyID?.text = currentCurrency.symbol
+                cell.currencyPrice?.text = formatCurrency(value: (currentCurrency.priceUSD)!)
+                cell.currencyCap?.text = formatCurrency(value: (currentCurrency.marketCapUSD)!)
+                return cell
+            }
+            
         }
     }
     
     // programmatically sets cell height
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
-        return 100.00
+        if indexPath.row == 0 {
+            return 125.00
+        } else {
+            return 100.00
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

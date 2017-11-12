@@ -10,7 +10,7 @@ import UIKit
 
 class topPerformerTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var threePctChg: UIView!
+    @IBOutlet weak var threePctChg: UILabel!
     @IBOutlet weak var twoPctChg: UILabel!
     @IBOutlet weak var onePctChg: UILabel!
     @IBOutlet weak var threeCurr: UILabel!
