@@ -130,6 +130,7 @@ class CryptoTableViewController: UITableViewController {
             return cell
         } else {
             // draws cells once data has been fetched and declared safe to force unwrap; uses indexPath.row to determine which object in CryptoCurrencies to draw where; returns drawn cell
+            // Implementation of "top performers" feature; sorts by percentChange over the past hour and displays the top three currencies based on this
             if indexPath.row == 0 {
                 let sortedCurrencies = cryptoCurrencies.sorted(by: { $0.percentChange1h! > $1.percentChange1h!})
                 let cell = tableView.dequeueReusableCell(withIdentifier: "topPerformer", for: indexPath) as! topPerformerTableViewCell
@@ -141,7 +142,9 @@ class CryptoTableViewController: UITableViewController {
                 cell.threePctChg.text = "\(sortedCurrencies[2].percentChange1h!)" + "%"
                 
                 return cell
+                
             } else {
+                // displays the currency listings
                 let cell = tableView.dequeueReusableCell(withIdentifier: "cryptoCellid", for: indexPath) as! CryptoTableViewCell
                 let currentCurrency = cryptoCurrencies[indexPath.row-1]
                 cell.currencyName?.text = currentCurrency.name
@@ -168,10 +171,10 @@ class CryptoTableViewController: UITableViewController {
         
         if let CryptoCurrencyViewController = segue.destination as? CryptoCurrencyViewController {
             
-            let indexSelectedRow = tableView.indexPathForSelectedRow?.row
-            print(cryptoCurrencies[indexSelectedRow!])
+            let indexSelectedRow = (tableView.indexPathForSelectedRow?.row)!-1
+            print(cryptoCurrencies[indexSelectedRow])
             
-            CryptoCurrencyViewController.cryptoCurrency = cryptoCurrencies[indexSelectedRow!]
+            CryptoCurrencyViewController.cryptoCurrency = cryptoCurrencies[indexSelectedRow]
             
             // How to retitle "Back" button so it doesn't just inherent the title of the last screen
             let backItem = UIBarButtonItem()
