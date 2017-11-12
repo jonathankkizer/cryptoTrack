@@ -5,14 +5,7 @@ Github:
 https://github.com/jonathankkizer/iOSAppDevProject
 
 JSON/Parsing Tutorials
-http://www.kaleidosblog.com/swift-uitableview-load-data-from-json
-http://andrewmarinov.com/parsing-json-swift-4/
-https://developer.apple.com/swift/blog/?id=37
-https://www.raywenderlich.com/150322/swift-json-tutorial-2
-http://mrgott.com/swift-programing/33-rest-api-in-swift-4-using-urlsession-and-jsondecode
-http://benscheirman.com/2017/06/ultimate-guide-to-json-parsing-with-swift-4/
-http://matteomanferdini.com/network-requests-rest-apis-ios-swift/
 
-Currently looking at: https://medium.com/@sdrzn/networking-and-persistence-with-json-in-swift-4-c400ecab402d
-
-USING THIS PACKAGE: https://github.com/iCell/CryptoCurrencyKit
+Issues: 
+Users does not currently persist after app closes; NSUserDefaults or Firebase to solve?
+Need to implement a way to manage purchases and price within each user (probably just add a way to track it within the User class)
