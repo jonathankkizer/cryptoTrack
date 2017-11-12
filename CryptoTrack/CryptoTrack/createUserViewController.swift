@@ -44,6 +44,7 @@ class createUserViewController: UIViewController {
             } else {
                 currencyType = currencySelector.titleForSegment(at: 1)!
             }
+            // ISSUE: DOES NOT PERSIST BETWEEN APP CLOSING -- FIGURE THIS OUT!
             let newUser = User(userName: userName.text!, passWord: passWord.text!, currencyType: currencyType)
             Users.append(newUser)
             print(Users.count)
