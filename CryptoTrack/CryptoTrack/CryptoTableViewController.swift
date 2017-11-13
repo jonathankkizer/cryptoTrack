@@ -165,6 +165,7 @@ class CryptoTableViewController: UITableViewController {
         } else {
             return 100.00
         }
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

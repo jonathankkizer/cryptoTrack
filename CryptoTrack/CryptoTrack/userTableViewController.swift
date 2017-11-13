@@ -14,13 +14,13 @@ class userTableViewController: UITableViewController {
 
     func addPeople() {
         // for quick testing purposes
-        let newUser1 = User(userName: "Joe", passWord: "a", currencyType: "USD")
+        let newUser1 = User(userName: "Tap 'Edit' to Skip to Currencies", passWord: "a", currencyType: "USD")
         Users.append(newUser1)
         print(Users.count)
     }
     
     override func viewDidLoad() {
-        //addPeople()
+        addPeople()
         super.viewDidLoad()
     }
 
