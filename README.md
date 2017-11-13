@@ -1,5 +1,5 @@
-# iOSAppDevProject
-CS 329E iOS App Development Final Project -- CryptoTrack!
+# cryptoTrack
+CS 329E iOS App Development Final Project -- cryptoTrack!
 
 Point is to offer a native and intuitive iOS app to view crypto-currency prices, as well as to add an amount of crypto-currency purchases at a specific price in order to track prices in various "fiat" currencies.
 
