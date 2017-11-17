@@ -1,5 +1,5 @@
 # cryptoTrack
-![cryptoTrack Icon](https://i.imgur.com/K8QYYsL.png)
+<center>![cryptoTrack Icon](https://i.imgur.com/JX6d7Zl.png)</center>
 
 
 CS 329E iOS App Development Final Project -- cryptoTrack!
