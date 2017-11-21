@@ -550,7 +550,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="ZzP-as-nF9">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="qak-lE-c8l">
+                        <barButtonItem key="leftBarButtonItem" title="Quick View" id="qak-lE-c8l">
                             <connections>
                                 <segue destination="yVI-uN-r2g" kind="show" id="JfO-c2-nQ8"/>
                             </connections>
@@ -564,7 +564,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WA8-DK-qoT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1026.4000000000001" y="176.76161919040482"/>
+            <point key="canvasLocation" x="-1026" y="413"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

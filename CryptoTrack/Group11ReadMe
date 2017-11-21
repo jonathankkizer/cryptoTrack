@@ -1,12 +1,16 @@
+Updated 11/21/17 for Beta Release
 Implementation Contribution:
-- Jonathan: TableView
-- Tyree: Login View
-- Greg: JSON fetching and parsing
+- Jonathan: Top Performers, integration with CryptoCurrencyKit, Login View
+- Tyree: Login View, displaying of users
+- Greg: Writing to UserDefaults() for users, comparing values for the actual login process
 Grading Level:
 - Same grade for all members
 Differences:
-- We decided that a lot of the work on this would be in fetching and parsing the JSON API
-- Similarly, populating the tableview was difficult
-- We decided to work on these over creation and deletion in order to give us more time on these elements
+- Began to work out the details for the actual tracking of various currencies, but it is not implemented yet due to issues with getting historical data from our JSON API
+- Currency Conversion will be handled by the user preference, so the groundwork for the app is laid
+- Added a "Top Performers" features to quickly figure out which currencies are doing well relative to their past hour price
+- Various small design tweaks
+- Added app icon
+- Added "Quick View" feature to bypass user login when you just want to easily see current market trends
 Special Instructions:
-- None
+- We are using Cocoa Pods, minimum version of iOS 9
