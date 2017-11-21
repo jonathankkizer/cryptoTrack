@@ -1,8 +1,8 @@
 Updated 11/21/17 for Beta Release
 Implementation Contribution:
-- Jonathan: Top Performers, integration with CryptoCurrencyKit, Login View
-- Tyree: Login View, displaying of users
-- Greg: Writing to UserDefaults() for users, comparing values for the actual login process
+- Jonathan: Top Performers, integration with CryptoCurrencyKit, Login View, app icon
+- Tyree: Login View, displaying of users, app icon, launchscreen
+- Greg: Writing to UserDefaults() for user creation and login, comparing values for the actual login process, 
 Grading Level:
 - Same grade for all members
 Differences:

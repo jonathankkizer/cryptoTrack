@@ -7,11 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45340E661FA8C29F00AE36CA /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45340E671FA8C29F00AE36CA /* FacebookLogin.framework */; };
-		45340E681FA8C2A900AE36CA /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45340E691FA8C2A900AE36CA /* FBSDKCoreKit.framework */; };
-		45340E6A1FA8C2B400AE36CA /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45340E6B1FA8C2B400AE36CA /* FacebookCore.framework */; };
 		45340E6D1FA8C57400AE36CA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45340E6C1FA8C57400AE36CA /* LoginViewController.swift */; };
-		45425E1F1FA8BD6F00355122 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; fileRef = 45425E201FA8BD6F00355122 /* FacebookCore */; };
 		7C9C2904882579358DB85DD3 /* Pods_CryptoTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287B7FA0748D713656D69C70 /* Pods_CryptoTrack.framework */; };
 		AB47F76A1FB5358F00EAAD02 /* loginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F7691FB5358F00EAAD02 /* loginTableViewController.swift */; };
 		AB47F7B11FB638E600EAAD02 /* topPerformerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F7B01FB638E600EAAD02 /* topPerformerTableViewCell.swift */; };
@@ -29,11 +25,7 @@
 
 /* Begin PBXFileReference section */
 		287B7FA0748D713656D69C70 /* Pods_CryptoTrack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoTrack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		45340E671FA8C29F00AE36CA /* FacebookLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		45340E691FA8C2A900AE36CA /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		45340E6B1FA8C2B400AE36CA /* FacebookCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45340E6C1FA8C57400AE36CA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		45425E201FA8BD6F00355122 /* FacebookCore */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = FacebookCore; path = ../../../../../../../../Desktop/iOSAppDevProject/CryptoTrack/Pods/FacebookCore; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB47F7691FB5358F00EAAD02 /* loginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginTableViewController.swift; sourceTree = "<group>"; };
 		AB47F7B01FB638E600EAAD02 /* topPerformerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topPerformerTableViewCell.swift; sourceTree = "<group>"; };
 		AB47F7FA1FB8E90500EAAD02 /* createUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createUserViewController.swift; sourceTree = "<group>"; };
@@ -57,10 +49,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45340E6A1FA8C2B400AE36CA /* FacebookCore.framework in Frameworks */,
-				45340E681FA8C2A900AE36CA /* FBSDKCoreKit.framework in Frameworks */,
-				45340E661FA8C29F00AE36CA /* FacebookLogin.framework in Frameworks */,
-				45425E1F1FA8BD6F00355122 /* FacebookCore in Frameworks */,
 				7C9C2904882579358DB85DD3 /* Pods_CryptoTrack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,10 +98,6 @@
 		ACC9E081F7F8216FD148F775 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				45340E6B1FA8C2B400AE36CA /* FacebookCore.framework */,
-				45340E691FA8C2A900AE36CA /* FBSDKCoreKit.framework */,
-				45340E671FA8C29F00AE36CA /* FacebookLogin.framework */,
-				45425E201FA8BD6F00355122 /* FacebookCore */,
 				287B7FA0748D713656D69C70 /* Pods_CryptoTrack.framework */,
 			);
 			name = Frameworks;
@@ -239,21 +223,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CryptoTrack/Pods-CryptoTrack-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/CryptoCurrencyKit/CryptoCurrencyKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoCurrencyKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
