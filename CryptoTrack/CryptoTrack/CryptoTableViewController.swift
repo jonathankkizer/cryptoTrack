@@ -188,6 +188,12 @@ class CryptoTableViewController: UITableViewController {
     }
     
     
+    @IBAction func toSettings(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToSettings" , sender: self)
+        
+    }
+    
+    
 }
 
 

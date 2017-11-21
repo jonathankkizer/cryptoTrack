@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		451CC6A81FC4AFC50099823C /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451CC6A71FC4AFC50099823C /* settingsViewController.swift */; };
 		45340E661FA8C29F00AE36CA /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45340E671FA8C29F00AE36CA /* FacebookLogin.framework */; };
 		45340E681FA8C2A900AE36CA /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45340E691FA8C2A900AE36CA /* FBSDKCoreKit.framework */; };
 		45340E6A1FA8C2B400AE36CA /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45340E6B1FA8C2B400AE36CA /* FacebookCore.framework */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		287B7FA0748D713656D69C70 /* Pods_CryptoTrack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoTrack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		451CC6A71FC4AFC50099823C /* settingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		45340E671FA8C29F00AE36CA /* FacebookLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45340E691FA8C2A900AE36CA /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45340E6B1FA8C2B400AE36CA /* FacebookCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +108,7 @@
 				AB49BBE91F9F9FCC00BF2483 /* Assets.xcassets */,
 				AB49BBEB1F9F9FCC00BF2483 /* LaunchScreen.storyboard */,
 				AB49BBEE1F9F9FCC00BF2483 /* Info.plist */,
+				451CC6A71FC4AFC50099823C /* settingsViewController.swift */,
 			);
 			path = CryptoTrack;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				AB8A3D601FB0DD0E00AC6D3D /* formatCurrency.swift in Sources */,
 				AB49BBE01F9F9FCC00BF2483 /* AppDelegate.swift in Sources */,
 				45340E6D1FA8C57400AE36CA /* LoginViewController.swift in Sources */,
+				451CC6A81FC4AFC50099823C /* settingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,13 +425,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8QDNBA629H;
+				DEVELOPMENT_TEAM = 5W4A89A8S7;
 				INFOPLIST_FILE = CryptoTrack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = csUTAustin.CryptoTrack;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cryptotrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -437,13 +442,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8QDNBA629H;
+				DEVELOPMENT_TEAM = 5W4A89A8S7;
 				INFOPLIST_FILE = CryptoTrack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = csUTAustin.CryptoTrack;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cryptotrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
