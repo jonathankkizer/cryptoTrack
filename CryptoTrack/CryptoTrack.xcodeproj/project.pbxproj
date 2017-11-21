@@ -14,7 +14,6 @@
 		45425E1F1FA8BD6F00355122 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; fileRef = 45425E201FA8BD6F00355122 /* FacebookCore */; };
 		7C9C2904882579358DB85DD3 /* Pods_CryptoTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287B7FA0748D713656D69C70 /* Pods_CryptoTrack.framework */; };
 		AB47F76A1FB5358F00EAAD02 /* loginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F7691FB5358F00EAAD02 /* loginTableViewController.swift */; };
-		AB47F76C1FB5359E00EAAD02 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F76B1FB5359E00EAAD02 /* user.swift */; };
 		AB47F7B11FB638E600EAAD02 /* topPerformerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F7B01FB638E600EAAD02 /* topPerformerTableViewCell.swift */; };
 		AB47F7FB1FB8E90500EAAD02 /* createUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F7FA1FB8E90500EAAD02 /* createUserViewController.swift */; };
 		AB49BBE01F9F9FCC00BF2483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB49BBDF1F9F9FCC00BF2483 /* AppDelegate.swift */; };
@@ -36,7 +35,6 @@
 		45340E6C1FA8C57400AE36CA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		45425E201FA8BD6F00355122 /* FacebookCore */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = FacebookCore; path = ../../../../../../../../Desktop/iOSAppDevProject/CryptoTrack/Pods/FacebookCore; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB47F7691FB5358F00EAAD02 /* loginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginTableViewController.swift; sourceTree = "<group>"; };
-		AB47F76B1FB5359E00EAAD02 /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 		AB47F7B01FB638E600EAAD02 /* topPerformerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topPerformerTableViewCell.swift; sourceTree = "<group>"; };
 		AB47F7FA1FB8E90500EAAD02 /* createUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createUserViewController.swift; sourceTree = "<group>"; };
 		AB49BBDC1F9F9FCC00BF2483 /* CryptoTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +97,6 @@
 				ABFD3F531FA7ADB200FB51C0 /* CryptoTableViewCell.swift */,
 				AB8A3D5D1FB0D51400AC6D3D /* CryptoCurrencyViewController.swift */,
 				AB47F7691FB5358F00EAAD02 /* loginTableViewController.swift */,
-				AB47F76B1FB5359E00EAAD02 /* user.swift */,
 				AB8A3D5F1FB0DD0E00AC6D3D /* formatCurrency.swift */,
 				AB49BBDF1F9F9FCC00BF2483 /* AppDelegate.swift */,
 				45340E6C1FA8C57400AE36CA /* LoginViewController.swift */,
@@ -277,7 +274,6 @@
 				AB7E00A11FB8F29600C2EE3D /* userTableViewController.swift in Sources */,
 				ABFD3F541FA7ADB200FB51C0 /* CryptoTableViewCell.swift in Sources */,
 				AB8A3D5E1FB0D51400AC6D3D /* CryptoCurrencyViewController.swift in Sources */,
-				AB47F76C1FB5359E00EAAD02 /* user.swift in Sources */,
 				AB8A3D601FB0DD0E00AC6D3D /* formatCurrency.swift in Sources */,
 				AB49BBE01F9F9FCC00BF2483 /* AppDelegate.swift in Sources */,
 				45340E6D1FA8C57400AE36CA /* LoginViewController.swift in Sources */,
