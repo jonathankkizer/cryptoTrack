@@ -15,10 +15,10 @@ class createUserViewController: UIViewController {
     @IBOutlet weak var userName: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -37,29 +37,37 @@ class createUserViewController: UIViewController {
             self.alertController!.addAction(OKAction)
             self.present(self.alertController!, animated: true, completion:nil)
             
-        } else {
+        }
+        else{
             var currencyType: String = ""
             if currencySelector.selectedSegmentIndex == 0 {
                 currencyType = currencySelector.titleForSegment(at: 0)!
             } else {
                 currencyType = currencySelector.titleForSegment(at: 1)!
             }
-            // ISSUE: DOES NOT PERSIST BETWEEN APP CLOSING -- FIGURE THIS OUT!
-            let newUser = User(userName: userName.text!, passWord: passWord.text!, currencyType: currencyType)
-            Users.append(newUser)
-            print(Users.count)
+            
+            
+            UserDefaults().set(userName.text,forKey:"userName");
+            
+            UserDefaults().set(passWord.text,forKey:"passWord");
+            
+            UserDefaults().set(currencyType, forKey:"currencyType")
+            
+            UserDefaults().synchronize();
+            
+            Users.append(userName.text!)
+            
+            UserDefaults().set(Users, forKey: "savedUsers")
+            
+            self.alertController = UIAlertController(title: "", message: "Thank You for Registering.", preferredStyle: UIAlertControllerStyle.alert)
+            
+            let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (action:UIAlertAction) in
             }
+            self.alertController!.addAction(OKAction)
+            //self.present(self.alertController!, animated: true, completion:nil)}
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
+

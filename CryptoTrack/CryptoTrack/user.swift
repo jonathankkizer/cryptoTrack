@@ -10,12 +10,8 @@ import Foundation
 
 public class User {
     var userName: String?
-    var passWord: String?
-    var currencyType: String?
     
-    init(userName:String, passWord:String, currencyType:String) {
+    init(userName: String) {
         self.userName = userName
-        self.passWord = passWord
-        self.currencyType = currencyType
     }
 }

@@ -8,21 +8,15 @@
 
 import UIKit
 
-public var Users = [User]()
+let defaults = UserDefaults.standard
+var Users = defaults.stringArray(forKey: "savedUsers") ?? [String]()
 
 class userTableViewController: UITableViewController {
-
-    func addPeople() {
-        // for quick testing purposes
-        let newUser1 = User(userName: "Tap 'Edit' to Skip to Currencies", passWord: "a", currencyType: "USD")
-        Users.append(newUser1)
-        print(Users.count)
-    }
     
     override func viewDidLoad() {
-        addPeople()
         super.viewDidLoad()
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -46,7 +40,7 @@ class userTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath)
 
         let userRow = Users[indexPath.row]
-        cell.textLabel!.text = userRow.userName
+        cell.textLabel!.text = userRow
         return cell
     }
 

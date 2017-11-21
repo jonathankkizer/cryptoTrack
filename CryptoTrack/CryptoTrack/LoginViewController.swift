@@ -1,15 +1,7 @@
-//
-//  LoginViewController.swift
-//  CryptoTrack
-//
-//  Created by Tyree Pearson on 10/31/17.
-//  Copyright © 2017 Jonathan Kizer. All rights reserved.
-//
-
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
     
     @IBOutlet weak var _username: UITextField!
     
@@ -18,7 +10,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var _login_button: UIButton!
     
     
-
+    
     
     
     override func viewDidLoad() {
@@ -34,36 +26,63 @@ class LoginViewController: UIViewController {
         else{
             loginToDo()
         }
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         //Dispose of any resources that can be recreated.
     }
     
-    
+    var alertController:UIAlertController? = nil
     @IBAction func loginButton(_ sender: Any) {
         
-        if (_login_button.titleLabel?.text == "Logout")
+        let userNameStored = UserDefaults().string(forKey:"userName");
+        
+        let passWordStored = UserDefaults().string(forKey:"passWord");
+        
+        //let currency = UserDefaults().string(forKey: "currencyType")
+        
+        if userNameStored == _username.text && passWordStored == _password.text
         {
-            let preferences = UserDefaults.standard
-            preferences.removeObject(forKey: "session")
+            // Login is successful
+            //print(currency!)
+            UserDefaults().set(true,forKey:"isUserLoggedIn");
+            UserDefaults().synchronize();
+            self.dismiss(animated : true, completion:nil);
             
-            loginToDo()
-            return
+        }
+            // print(currency!)
+            //   let preferences = UserDefaults.standard
+            // preferences.removeObject(forKey: "session")
+            
+            //loginToDo()
+            //return
+            //}
+            
+        else {
+            UserDefaults().set(false,forKey:"isUserLoggedIn");
+            UserDefaults().synchronize();
+            //alert user
+            
+            self.alertController = UIAlertController(title: "Error", message: "Incorrect Username or Password", preferredStyle: UIAlertControllerStyle.alert)
+            
+            let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (action:UIAlertAction) in
+            }
+            self.alertController!.addAction(OKAction)
+            self.present(self.alertController!, animated: true, completion:nil)
         }
         
-        let username = _username.text
-        let password = _password.text
+        //   let username = _username.text
+        // let password = _password.text
         
-        if (username == "" || password == "")
-        {
-            return
-        }
-        doLogin(username!, password!)
-    
+        //if (username == "" || password == "")
+        //{
+        //  return
+        //}
+        //doLogin(username!, password!)
+        
     }
     
     func doLogin(_ user: String,_ psw: String)
@@ -133,32 +152,38 @@ class LoginViewController: UIViewController {
         _password.isEnabled = false
         
         _login_button.setTitle("Logout", for: .normal)
+        UserDefaults().set(false,forKey:"isUserLoggedIn")
+        
+        
     }
     
     
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        // UserDefaults().set(false,forKey:"isUserLoggedIn");
+        //UserDefaults().synchronize();
         if let CryptoTableViewController = segue.destination as? CryptoTableViewController {
             
             // How to retitle "Back" button so it doesn't just inherent the title of the last screen
             let backItem = UIBarButtonItem()
             backItem.title = "Log Out"
             navigationItem.backBarButtonItem = backItem
+            
         }
         
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-
+    
 }
+
