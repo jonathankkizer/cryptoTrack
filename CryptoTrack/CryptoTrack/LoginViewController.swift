@@ -2,6 +2,7 @@ import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
+    var usernameProvider: String = ""
     
     @IBOutlet weak var _username: UITextField!
     
@@ -18,6 +19,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         _username.delegate = self
         _password.delegate = self
+        _username.text = usernameProvider
         
         let preferences = UserDefaults.standard
         
@@ -186,7 +188,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
      }
      */
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // UserDefaults().set(false,forKey:"isUserLoggedIn");
         //UserDefaults().synchronize();
         if let CryptoTableViewController = segue.destination as? CryptoTableViewController {
@@ -200,7 +202,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-    }
+    }*/
     
 }
 

@@ -173,7 +173,7 @@ class CryptoTableViewController: UITableViewController {
         if let CryptoCurrencyViewController = segue.destination as? CryptoCurrencyViewController {
             
             let indexSelectedRow = (tableView.indexPathForSelectedRow?.row)!-1
-            print(cryptoCurrencies[indexSelectedRow])
+            //print(cryptoCurrencies[indexSelectedRow])
             
             CryptoCurrencyViewController.cryptoCurrency = cryptoCurrencies[indexSelectedRow]
             
