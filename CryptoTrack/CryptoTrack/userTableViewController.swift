@@ -14,6 +14,7 @@ var Users = defaults.stringArray(forKey: "savedUsers") ?? [String]()
 class userTableViewController: UITableViewController {
     
     override func viewDidLoad() {
+        self.title = "Users"
         super.viewDidLoad()
     }
     
@@ -43,5 +44,17 @@ class userTableViewController: UITableViewController {
         cell.textLabel!.text = userRow
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let indexPath = tableView.indexPathForSelectedRow
+        if let LoginViewController = segue.destination as? LoginViewController {
+            LoginViewController.usernameProvider = Users[(indexPath?.row)!]
+        }
+        
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+
 
 }

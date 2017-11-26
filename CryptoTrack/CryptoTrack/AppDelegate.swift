@@ -15,6 +15,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
+    public func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Swift.Void) {
+        if shortcutItem.type == "type01" {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier :"cryptoTableVC") as! CryptoTableViewController
+            let navController = UINavigationController.init(rootViewController: viewController)
+            
+            if let window = self.window, let rootViewController = window.rootViewController {
+                var currentController = rootViewController
+                while let presentedController = currentController.presentedViewController {
+                    currentController = presentedController
+                }
+                currentController.present(navController, animated: true, completion: nil)
+            }
+            completionHandler(true)
+        } else {
+            completionHandler(false)
+        }
+        
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
