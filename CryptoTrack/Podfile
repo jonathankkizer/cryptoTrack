@@ -5,8 +5,6 @@ target 'CryptoTrack' do
   use_frameworks!
 
   # Pods for CryptoTrack
-    pod 'FacebookCore'
-    pod 'FacebookLogin'
     pod 'CryptoCurrencyKit'
 
 end

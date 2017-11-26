@@ -95,7 +95,7 @@ class CryptoTableViewController: UITableViewController {
         super.viewDidLoad()
         getCurrencies()
         //self.tableView.reloadData()
-        self.title = "CryptoCurrencies"
+        self.title = "Currencies"
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
