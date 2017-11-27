@@ -1,0 +1,12 @@
+PODS:
+  - CryptoCurrencyKit (0.3.1)
+
+DEPENDENCIES:
+  - CryptoCurrencyKit
+
+SPEC CHECKSUMS:
+  CryptoCurrencyKit: 5c78da2dfb845e2feddb519b56169ab39f117ca1
+
+PODFILE CHECKSUM: 758270e87ec13e0edebe75d2c215c7ae6b181677
+
+COCOAPODS: 1.3.1
