@@ -66,7 +66,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GUJ-zk-Vx0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-239.19999999999999" y="176.76161919040482"/>
+            <point key="canvasLocation" x="-225" y="589"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="Xj9-vR-zki">
+            <objects>
+                <viewController id="kIQ-hg-YlT" customClass="settingsViewController" customModule="CryptoTrack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6WP-JX-ZpO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OYF-1S-ywj">
+                                <rect key="frame" x="37" y="339" width="279" height="81"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.98582005984303511" blue="0.98292241411621284" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Currency " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cx-qH-hyr">
+                                <rect key="frame" x="37" y="306" width="322" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="tintColor" red="0.0" green="0.67679885819999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="PZ2-T4-aUI"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="currencyPicker" destination="OYF-1S-ywj" id="LCo-48-gid"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uZs-Ql-lcs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672.8" y="-549.17541229385313"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yUj-MA-d1N">
@@ -304,6 +342,12 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+<<<<<<< HEAD
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gKW-0u-pam">
+                                            <rect key="frame" x="148" y="11" width="61" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+=======
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;ID&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNk-wn-YMp">
                                             <rect key="frame" x="16" y="75" width="32" height="17"/>
                                             <constraints>
@@ -313,6 +357,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+>>>>>>> origin/master
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="qUj-G1-ys1" firstAttribute="top" secondItem="LGB-dc-ihO" secondAttribute="topMargin" constant="7" id="Jjt-3P-FQi"/>
@@ -350,14 +395,19 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="KEM-ZV-jzb">
                             <connections>
+<<<<<<< HEAD
+                                <action selector="toSettings:" destination="yVI-uN-r2g" id="RDX-TU-AhG"/>
+                                <segue destination="kIQ-hg-YlT" kind="show" identifier="goToSettings" id="Tch-G5-CHH"/>
+=======
                                 <segue destination="7Ab-Wq-tIj" kind="show" id="V4C-Ae-faI"/>
+>>>>>>> origin/master
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sAW-QY-an2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="512.79999999999995" y="180.35982008995504"/>
+            <point key="canvasLocation" x="742" y="177"/>
         </scene>
         <!--Crypto Currency View Controller-->
         <scene sceneID="Rg8-2J-H3x">
@@ -469,7 +519,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VH8-wg-IR3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1255.2" y="176.76161919040482"/>
+            <point key="canvasLocation" x="1673" y="177"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oga-LE-fad">
@@ -638,7 +688,15 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+<<<<<<< HEAD
         <segue reference="nZh-ld-nPG"/>
+=======
+<<<<<<< HEAD
+        <segue reference="nZh-ld-nPG"/>
+=======
+        <segue reference="fNY-O1-ppK"/>
+>>>>>>> origin/master
+>>>>>>> 149d28f163d338a8d737a3493d44440e353a9972
         <segue reference="09y-pZ-IPZ"/>
     </inferredMetricsTieBreakers>
 </document>
