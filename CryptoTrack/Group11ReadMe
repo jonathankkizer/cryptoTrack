@@ -1,6 +1,6 @@
 Updated 11/21/17 for Beta Release
 Implementation Contribution:
-- Jonathan: Top Performers, integration with CryptoCurrencyKit, Login View, app icon
+- Jonathan: Top Performers, integration with CryptoCurrencyKit, Login View, app icon, 3D Touch shortcut
 - Tyree: Login View, displaying of users, app icon, launchscreen
 - Greg: Writing to UserDefaults() for user creation and login, comparing values for the actual login process, 
 Grading Level:
@@ -12,5 +12,7 @@ Differences:
 - Various small design tweaks
 - Added app icon
 - Added "Quick View" feature to bypass user login when you just want to easily see current market trends
+- Added 3D Touch on app icon for shortcut to currency view, bypassing user login screens
+- Tapping the screen outside the keyboard dismisses the keyboard
 Special Instructions:
 - We are using Cocoa Pods, minimum version of iOS 9

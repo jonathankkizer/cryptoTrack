@@ -44,7 +44,7 @@
 			<key>UIApplicationShortcutItemIconFile</key>
 			<string></string>
 			<key>UIApplicationShortcutItemTitle</key>
-			<string>Quick View Currencies</string>
+			<string>View Currencies</string>
 			<key>UIApplicationShortcutItemType</key>
 			<string>type01</string>
 		</dict>
