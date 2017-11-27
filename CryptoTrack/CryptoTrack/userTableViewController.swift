@@ -10,6 +10,7 @@ import UIKit
 
 let defaults = UserDefaults.standard
 var Users = defaults.stringArray(forKey: "savedUsers") ?? [String]()
+public var currentUserInt: Int = 0
 
 class userTableViewController: UITableViewController {
     
@@ -45,12 +46,22 @@ class userTableViewController: UITableViewController {
         return cell
     }
     
+    @IBAction func quickCurrencyButton(_ sender: Any) {
+        let vc = storyboard!.instantiateViewController(withIdentifier: "cryptoTableVC") as! CryptoTableViewController
+        let navigationController = UINavigationController(rootViewController: vc)
+        self.present(navigationController, animated: true, completion: nil)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let indexPath = tableView.indexPathForSelectedRow
         if let LoginViewController = segue.destination as? LoginViewController {
             LoginViewController.usernameProvider = Users[(indexPath?.row)!]
+            currentUserInt = (indexPath?.row)!
+            print("Current User Int:")
+            print(currentUserInt)
         }
+        
         
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.

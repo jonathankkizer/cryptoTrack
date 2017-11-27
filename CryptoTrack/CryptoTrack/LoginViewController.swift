@@ -57,7 +57,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     var alertController:UIAlertController? = nil
     @IBAction func loginButton(_ sender: Any) {
         
-        let userNameStored = UserDefaults().string(forKey:"userName");
+        let userNameStored = UserDefaults().string(forKey:"userName")
         
         let passWordStored = UserDefaults().string(forKey:"passWord");
         
@@ -71,14 +71,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             UserDefaults().synchronize();
             self.dismiss(animated : true, completion:nil);
             
-        }
-            // print(currency!)
-            //   let preferences = UserDefaults.standard
-            // preferences.removeObject(forKey: "session")
             
-            //loginToDo()
-            //return
-            //}
+        }
+
             
         else {
             UserDefaults().set(false,forKey:"isUserLoggedIn");

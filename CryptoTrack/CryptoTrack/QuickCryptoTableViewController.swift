@@ -1,18 +1,17 @@
 //
-//  CryptoTableViewController.swift
+//  QuickCryptoTableViewController.swift
 //  CryptoTrack
 //
-//  Created by Jonathan Kizer on 10/30/17.
+//  Created by Jonathan Kizer on 11/27/17.
 //  Copyright © 2017 Jonathan Kizer. All rights reserved.
 //
 
 import UIKit
 import CryptoCurrencyKit
 
-let currency = UserDefaults().string(forKey: "currencyType")
 
-class CryptoTableViewController: UITableViewController {
-
+class QuickCryptoTableViewController: UITableViewController {
+    
     // cryptoCurrencies is array that contains the below cryptoCurrencyX objects; used to access later when drawing views, etc. with indexPath.row
     public var cryptoCurrencies = [Ticker]()
     // instantied to reference the tickers return results in cryptocurrencykit closure below
@@ -96,20 +95,20 @@ class CryptoTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getCurrencies()
-        self.title = "Currencies"
+        self.title = "Quick View"
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -120,7 +119,7 @@ class CryptoTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cryptoCurrencies.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print(indexPath.row)
         
@@ -130,7 +129,6 @@ class CryptoTableViewController: UITableViewController {
             cell.currencyPrice?.text = "🛠🛠🛠"
             return cell
         } else {
-            let conversionCurrencyType = UserDefaults().string(forKey:"currencyType")
             // draws cells once data has been fetched and declared safe to force unwrap; uses indexPath.row to determine which object in CryptoCurrencies to draw where; returns drawn cell
             // Implementation of "top performers" feature; sorts by percentChange over the past hour and displays the top three currencies based on this
             if indexPath.row == 0 {
@@ -151,22 +149,9 @@ class CryptoTableViewController: UITableViewController {
                 let currentCurrency = cryptoCurrencies[indexPath.row-1]
                 cell.currencyName?.text = currentCurrency.name
                 cell.currencyID?.text = currentCurrency.symbol
-                if conversionCurrencyType == "USD" {
-                    cell.currencyPrice?.text = formatCurrencyUSD(value: (currentCurrency.priceUSD)!)
-                    cell.currencyCap?.text = formatCurrencyUSD(value: (currentCurrency.marketCapUSD)!)
-                } else {
-                    if (currentCurrency.priceBTC == nil) {
-                        cell.currencyPrice?.text = " "
-                    } else {
-                        cell.currencyPrice?.text = "\(formatCurrencyBTC(value: currentCurrency.priceBTC!))"
-                    }
-                    if (currentCurrency.priceBTC == nil) {
-                        cell.currencyPrice?.text = " "
-                    } else {
-                        let marketCapBTC = Double(currentCurrency.priceBTC!) * Double(currentCurrency.totalSupply!)
-                        cell.currencyCap?.text = "\(formatCurrencyBTC(value: marketCapBTC))"
-                    }
-                }
+                cell.currencyPrice?.text = formatCurrencyUSD(value: (currentCurrency.priceUSD)!)
+                cell.currencyCap?.text = formatCurrencyUSD(value: (currentCurrency.marketCapUSD)!)
+
                 
                 return cell
             }
@@ -200,11 +185,10 @@ class CryptoTableViewController: UITableViewController {
             navigationItem.backBarButtonItem = backItem
         }
         
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
     
     
 }
+
 
 

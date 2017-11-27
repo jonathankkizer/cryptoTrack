@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     public func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Swift.Void) {
         if shortcutItem.type == "type01" {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let viewController = storyboard.instantiateViewController(withIdentifier :"cryptoTableVC") as! CryptoTableViewController
+            let viewController = storyboard.instantiateViewController(withIdentifier :"quickCryptoTableVC") as! QuickCryptoTableViewController
             let navController = UINavigationController.init(rootViewController: viewController)
             
             if let window = self.window, let rootViewController = window.rootViewController {

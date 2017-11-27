@@ -23,8 +23,8 @@ class CryptoCurrencyViewController: UIViewController {
         super.viewDidLoad()
         
         cryptoName.text = cryptoCurrency?.name
-        priceUSD.text = formatCurrency(value: (cryptoCurrency?.priceUSD)!)
-        priceMarketCap.text = formatCurrency(value: (cryptoCurrency?.marketCapUSD)!)
+        priceUSD.text = formatCurrencyUSD(value: (cryptoCurrency?.priceUSD)!)
+        priceMarketCap.text = formatCurrencyUSD(value: (cryptoCurrency?.marketCapUSD)!)
         oneHourPctChange.text = "\(cryptoCurrency!.percentChange1h!)" + "%"
         twentyFourHourPctChange.text = "\(cryptoCurrency!.percentChange24h!)" + "%"
         
