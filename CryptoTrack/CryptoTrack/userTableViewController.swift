@@ -47,7 +47,7 @@ class userTableViewController: UITableViewController {
     }
     
     @IBAction func quickCurrencyButton(_ sender: Any) {
-        let vc = storyboard!.instantiateViewController(withIdentifier: "cryptoTableVC") as! CryptoTableViewController
+        let vc = storyboard!.instantiateViewController(withIdentifier: "quickCryptoTableVC") as! QuickCryptoTableViewController
         let navigationController = UINavigationController(rootViewController: vc)
         self.present(navigationController, animated: true, completion: nil)
     }
