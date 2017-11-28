@@ -155,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eIb-cj-s56" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="504.80000000000001" y="-515.8920539730135"/>
+            <point key="canvasLocation" x="513" y="-566"/>
         </scene>
         <!--Crypto Table View Controller-->
         <scene sceneID="3ch-z3-goi">

@@ -34,7 +34,10 @@ class SettingsViewController: UIViewController {
             currencyType = defaultCurrencySelector.titleForSegment(at: 1)!
         }
         UserDefaults().set(currencyType, forKey:"currencyType")
-        print(currencyType)
+        //print(currencyType)
+        let vc = storyboard!.instantiateViewController(withIdentifier: "cryptoTableVC") as! CryptoTableViewController
+        let navigationController = UINavigationController(rootViewController: vc)
+        self.present(navigationController, animated: true, completion: nil)
     }
     
     

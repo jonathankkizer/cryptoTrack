@@ -33,13 +33,20 @@ class QuickCryptoTableViewController: UITableViewController {
     public var cryptoCurrency16: Ticker?
     public var cryptoCurrency17: Ticker?
     public var cryptoCurrency18: Ticker?
+    public var cryptoCurrency19: Ticker?
+    public var cryptoCurrency20: Ticker?
+    public var cryptoCurrency21: Ticker?
+    public var cryptoCurrency22: Ticker?
+    public var cryptoCurrency23: Ticker?
+    public var cryptoCurrency24: Ticker?
+    public var cryptoCurrency25: Ticker?
     
     public var safeToUnwrap: Bool? = false
     
     // calls out to cryptoCurrencyKit, and sets previously created cryptoCurrencyX equal to return results
     // then flips safeToUnwrap and reloads view; necessary because otherwise view attempts to load view which returns nil values
     func getCurrencies() {
-        CryptoCurrencyKit.fetchTickers { r in
+        CryptoCurrencyKit.fetchTickers(limit: 25) { r in
             switch r {
             case .success(let tickers):
                 //print(tickers)
@@ -79,6 +86,20 @@ class QuickCryptoTableViewController: UITableViewController {
                 self.cryptoCurrencies.append(self.cryptoCurrency17!)
                 self.cryptoCurrency18 = tickers[17]
                 self.cryptoCurrencies.append(self.cryptoCurrency18!)
+                self.cryptoCurrency19 = tickers[18]
+                self.cryptoCurrencies.append(self.cryptoCurrency19!)
+                self.cryptoCurrency20 = tickers[19]
+                self.cryptoCurrencies.append(self.cryptoCurrency20!)
+                self.cryptoCurrency21 = tickers[20]
+                self.cryptoCurrencies.append(self.cryptoCurrency21!)
+                self.cryptoCurrency22 = tickers[21]
+                self.cryptoCurrencies.append(self.cryptoCurrency22!)
+                self.cryptoCurrency23 = tickers[22]
+                self.cryptoCurrencies.append(self.cryptoCurrency23!)
+                self.cryptoCurrency24 = tickers[23]
+                self.cryptoCurrencies.append(self.cryptoCurrency24!)
+                self.cryptoCurrency25 = tickers[24]
+                self.cryptoCurrencies.append(self.cryptoCurrency25!)
                 
                 // reloads tableView once data has been fetched and parsed
                 self.tableView.reloadData()
