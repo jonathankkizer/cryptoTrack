@@ -69,7 +69,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             //print(currency!)
             UserDefaults().set(true,forKey:"isUserLoggedIn");
             UserDefaults().synchronize();
-            self.dismiss(animated : true, completion:nil);
             let vc = storyboard!.instantiateViewController(withIdentifier: "cryptoTableVC") as! CryptoTableViewController
             let navigationController = UINavigationController(rootViewController: vc)
             self.present(navigationController, animated: true, completion: nil)
