@@ -1,8 +1,15 @@
+//
+//  LoginViewController.swift
+//  CryptoTrack
+//
+//  Created by Tyree Pearson on 10/31/17.
+//  Copyright © 2017 Jonathan Kizer. All rights reserved.
+//
+
 import UIKit
 
-class LoginViewController: UIViewController, UITextFieldDelegate {
-    
-    var usernameProvider: String = ""
+class LoginViewController: UIViewController {
+
     
     @IBOutlet weak var _username: UITextField!
     
@@ -11,16 +18,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var _login_button: UIButton!
     
     
-    
+
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        _username.delegate = self
-        _password.delegate = self
-        _username.text = usernameProvider
-        
         let preferences = UserDefaults.standard
         
         self.title = "User Login"
@@ -32,23 +34,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         else{
             loginToDo()
         }
-        
+
         // Do any additional setup after loading the view.
     }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        // 'First Responder' is the same as 'input focus'.
-        // We are removing input focus from the text field.
-        textField.resignFirstResponder()
-        return true
-    }
-    
-    // Called when the user touches on the main view (outside the UITextField).
-    //
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         //Dispose of any resources that can be recreated.
@@ -57,32 +46,42 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     var alertController:UIAlertController? = nil
     @IBAction func loginButton(_ sender: Any) {
         
-        let userNameStored = UserDefaults().string(forKey:"userName");
-        
-        let passWordStored = UserDefaults().string(forKey:"passWord");
+       // let userNameStored = UserDefaults().string(forKey:"userName");
+    
+       // let passWordStored = UserDefaults().string(forKey:"passWord");
         
         //let currency = UserDefaults().string(forKey: "currencyType")
-        
-        if userNameStored == _username.text && passWordStored == _password.text
-        {
-            // Login is successful
-            //print(currency!)
-            UserDefaults().set(true,forKey:"isUserLoggedIn");
-            UserDefaults().synchronize();
-            self.dismiss(animated : true, completion:nil);
+        if userDict.isEmpty{
+            self.alertController = UIAlertController(title: "Error", message: "No Users Have Been Created", preferredStyle: UIAlertControllerStyle.alert)
             
+            let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (action:UIAlertAction) in
+            }
+            self.alertController!.addAction(OKAction)
+            self.present(self.alertController!, animated: true, completion:nil)
         }
-            // print(currency!)
-            //   let preferences = UserDefaults.standard
-            // preferences.removeObject(forKey: "session")
+        
+        else{
+        
+        if userDict[_username.text!]![0] == _password.text!
+            {
+                // Login is successful
+                //print(currency!)
+                //UserDefaults().set(true,forKey:"isUserLoggedIn");
+                //UserDefaults().synchronize();
+                self.dismiss(animated : true, completion:nil);
+            
+            }
+           // print(currency!)
+         //   let preferences = UserDefaults.standard
+           // preferences.removeObject(forKey: "session")
             
             //loginToDo()
             //return
-            //}
-            
+        //}
+        
         else {
-            UserDefaults().set(false,forKey:"isUserLoggedIn");
-            UserDefaults().synchronize();
+            //UserDefaults().set(false,forKey:"isUserLoggedIn");
+            //UserDefaults().synchronize();
             //alert user
             
             self.alertController = UIAlertController(title: "Error", message: "Incorrect Username or Password", preferredStyle: UIAlertControllerStyle.alert)
@@ -92,16 +91,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             self.alertController!.addAction(OKAction)
             self.present(self.alertController!, animated: true, completion:nil)
         }
-        
-        //   let username = _username.text
-        // let password = _password.text
+        }
+     //   let username = _username.text
+       // let password = _password.text
         
         //if (username == "" || password == "")
         //{
-        //  return
+          //  return
         //}
         //doLogin(username!, password!)
-        
+    
     }
     
     func doLogin(_ user: String,_ psw: String)
@@ -179,17 +178,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     
     /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
     
-    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // UserDefaults().set(false,forKey:"isUserLoggedIn");
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       // UserDefaults().set(false,forKey:"isUserLoggedIn");
         //UserDefaults().synchronize();
         if let CryptoTableViewController = segue.destination as? CryptoTableViewController {
             
@@ -202,7 +201,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-    }*/
-    
-}
+    }
 
+}

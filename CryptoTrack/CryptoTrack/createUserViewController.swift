@@ -8,31 +8,19 @@
 
 import UIKit
 
-class createUserViewController: UIViewController, UITextFieldDelegate {
+var userDict = [String: Array<String>]()
+
+class createUserViewController: UIViewController {
     
     @IBOutlet weak var currencySelector: UISegmentedControl!
     @IBOutlet weak var passWord: UITextField!
     @IBOutlet weak var userName: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        passWord.delegate = self
-        userName.delegate = self
+
         // Do any additional setup after loading the view.
     }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        // 'First Responder' is the same as 'input focus'.
-        // We are removing input focus from the text field.
-        textField.resignFirstResponder()
-        return true
-    }
-    
-    // Called when the user touches on the main view (outside the UITextField).
-    //
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -55,33 +43,42 @@ class createUserViewController: UIViewController, UITextFieldDelegate {
         else{
             var currencyType: String = ""
             if currencySelector.selectedSegmentIndex == 0 {
-                currencyType = currencySelector.titleForSegment(at: 0)!
+                    currencyType = currencySelector.titleForSegment(at: 0)!
             } else {
                 currencyType = currencySelector.titleForSegment(at: 1)!
             }
+
+            userDict[userName.text!] = [passWord.text!,currencyType]
+            // UserDefaults().set(userName.text,forKey:"userName");
             
-            
-            UserDefaults().set(userName.text,forKey:"userName");
-            
-            UserDefaults().set(passWord.text,forKey:"passWord");
-            
-            UserDefaults().set(currencyType, forKey:"currencyType")
-            
-            UserDefaults().synchronize();
-            
-            Users.append(userName.text!)
-            
-            UserDefaults().set(Users, forKey: "savedUsers")
+          
             
             self.alertController = UIAlertController(title: "", message: "Thank You for Registering.", preferredStyle: UIAlertControllerStyle.alert)
             
             let OKAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (action:UIAlertAction) in
             }
             self.alertController!.addAction(OKAction)
-            //self.present(self.alertController!, animated: true, completion:nil)}
+            self.present(self.alertController!, animated: true, completion:nil)}
         }
+        
+
+        }
+        
+        
+            
+            
+
+
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
     }
-    
-    
-}
+    */
+
 
