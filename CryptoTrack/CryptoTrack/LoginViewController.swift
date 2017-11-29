@@ -10,6 +10,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var _login_button: UIButton!
     
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -53,7 +57,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     var alertController:UIAlertController? = nil
     @IBAction func loginButton(_ sender: Any) {
         
-        let userNameStored = UserDefaults().string(forKey:"userName")
+        let userNameStored = UserDefaults().string(forKey:"userName");
         
         let passWordStored = UserDefaults().string(forKey:"passWord");
         
@@ -65,12 +69,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             //print(currency!)
             UserDefaults().set(true,forKey:"isUserLoggedIn");
             UserDefaults().synchronize();
-            let vc = storyboard!.instantiateViewController(withIdentifier: "cryptoTableVC") as! CryptoTableViewController
-            let navigationController = UINavigationController(rootViewController: vc)
-            self.present(navigationController, animated: true, completion: nil)
+            self.dismiss(animated : true, completion:nil);
             
         }
-
+            // print(currency!)
+            //   let preferences = UserDefaults.standard
+            // preferences.removeObject(forKey: "session")
+            
+            //loginToDo()
+            //return
+            //}
             
         else {
             UserDefaults().set(false,forKey:"isUserLoggedIn");
@@ -143,8 +151,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             
         })
         task.resume()
+        
+        
     }
-    
     func loginToDo()
     {
         _username.isEnabled = true
@@ -152,6 +161,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         _login_button.setTitle("Login", for: .normal)
     }
+    
+    
+    
     
     func loginDone()
     {
@@ -163,6 +175,34 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         
     }
+    
+    
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // UserDefaults().set(false,forKey:"isUserLoggedIn");
+        //UserDefaults().synchronize();
+        if let CryptoTableViewController = segue.destination as? CryptoTableViewController {
+            
+            // How to retitle "Back" button so it doesn't just inherent the title of the last screen
+            let backItem = UIBarButtonItem()
+            backItem.title = "Log Out"
+            navigationItem.backBarButtonItem = backItem
+            
+        }
+        
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }*/
     
 }
 
