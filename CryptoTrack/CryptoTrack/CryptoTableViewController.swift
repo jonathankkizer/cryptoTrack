@@ -201,6 +201,8 @@ class CryptoTableViewController: UITableViewController {
                 cell.cryptoValueLabel.text = formatCurrencyUSD(value: userValue)
                 if userValue > 0 {
                     cell.cryptoValueLabel.textColor = UIColor.green
+                } else if userValue == 0 {
+                    cell.cryptoValueLabel.textColor = UIColor.white
                 } else {
                     cell.cryptoValueLabel.textColor = UIColor.red
                 }
@@ -270,7 +272,4 @@ class CryptoTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     
-    
 }
-
-
