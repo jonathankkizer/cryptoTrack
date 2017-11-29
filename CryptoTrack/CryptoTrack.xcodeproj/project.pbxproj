@@ -19,7 +19,7 @@
 		AB584E451FCCA8F6001A89FA /* QuickCryptoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB584E441FCCA8F6001A89FA /* QuickCryptoTableViewController.swift */; };
 		AB6E8E961FCDDC6A00A3B88E /* userCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6E8E951FCDDC6A00A3B88E /* userCoin.swift */; };
 		AB6E8E981FCDEAFA00A3B88E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB6E8E971FCDEAFA00A3B88E /* GoogleService-Info.plist */; };
-		AB6E8E9A1FCDF30700A3B88E /* fireBaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6E8E991FCDF30700A3B88E /* fireBaseStore.swift */; };
+		AB6E8E9A1FCDF30700A3B88E /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6E8E991FCDF30700A3B88E /* DataStore.swift */; };
 		AB7E00A11FB8F29600C2EE3D /* userTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E00A01FB8F29600C2EE3D /* userTableViewController.swift */; };
 		AB8A3D5E1FB0D51400AC6D3D /* CryptoCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A3D5D1FB0D51400AC6D3D /* CryptoCurrencyViewController.swift */; };
 		AB8A3D601FB0DD0E00AC6D3D /* formatCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8A3D5F1FB0DD0E00AC6D3D /* formatCurrency.swift */; };
@@ -43,7 +43,7 @@
 		AB584E441FCCA8F6001A89FA /* QuickCryptoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCryptoTableViewController.swift; sourceTree = "<group>"; };
 		AB6E8E951FCDDC6A00A3B88E /* userCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userCoin.swift; sourceTree = "<group>"; };
 		AB6E8E971FCDEAFA00A3B88E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		AB6E8E991FCDF30700A3B88E /* fireBaseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fireBaseStore.swift; sourceTree = "<group>"; };
+		AB6E8E991FCDF30700A3B88E /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		AB7E00A01FB8F29600C2EE3D /* userTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userTableViewController.swift; sourceTree = "<group>"; };
 		AB8A3D5D1FB0D51400AC6D3D /* CryptoCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyViewController.swift; sourceTree = "<group>"; };
 		AB8A3D5F1FB0DD0E00AC6D3D /* formatCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formatCurrency.swift; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 				AB47F7B01FB638E600EAAD02 /* topPerformerTableViewCell.swift */,
 				ABFD3F531FA7ADB200FB51C0 /* CryptoTableViewCell.swift */,
 				AB8A3D5D1FB0D51400AC6D3D /* CryptoCurrencyViewController.swift */,
-				AB6E8E991FCDF30700A3B88E /* fireBaseStore.swift */,
+				AB6E8E991FCDF30700A3B88E /* DataStore.swift */,
 				AB6E8E951FCDDC6A00A3B88E /* userCoin.swift */,
 				AB8A3D5F1FB0DD0E00AC6D3D /* formatCurrency.swift */,
 				AB49BBDF1F9F9FCC00BF2483 /* AppDelegate.swift */,
@@ -265,7 +265,7 @@
 			files = (
 				ABBF7B111FA7A03100190A15 /* CryptoTableViewController.swift in Sources */,
 				AB47F7B11FB638E600EAAD02 /* topPerformerTableViewCell.swift in Sources */,
-				AB6E8E9A1FCDF30700A3B88E /* fireBaseStore.swift in Sources */,
+				AB6E8E9A1FCDF30700A3B88E /* DataStore.swift in Sources */,
 				AB584E3F1FCC8F63001A89FA /* SettingsViewController.swift in Sources */,
 				AB99B0AB1FCE5C4000BD0EFD /* cryptoValueTableViewCell.swift in Sources */,
 				AB47F7FB1FB8E90500EAAD02 /* createUserViewController.swift in Sources */,
