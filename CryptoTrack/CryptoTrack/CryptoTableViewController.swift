@@ -120,6 +120,7 @@ class CryptoTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        cryptoCurrencies = [Ticker]()
         getCurrencies()
         self.title = "Currencies"
         //self.getCurrencies()
