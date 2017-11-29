@@ -41,8 +41,8 @@
 	<key>UIApplicationShortcutItems</key>
 	<array>
 		<dict>
-			<key>UIApplicationShortcutItemIconFile</key>
-			<string></string>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortcutIconTypeFavorite</string>
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>View Currencies</string>
 			<key>UIApplicationShortcutItemType</key>
