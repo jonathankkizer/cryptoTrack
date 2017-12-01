@@ -8,6 +8,8 @@
 
 import UIKit
 
+public var userCreated: Bool = false
+
 class createUserViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var currencySelector: UISegmentedControl!
@@ -79,6 +81,12 @@ class createUserViewController: UIViewController, UITextFieldDelegate {
             }
             self.alertController!.addAction(OKAction)
             //self.present(self.alertController!, animated: true, completion:nil)}
+            
+            userCreated = true
+            
+            
+            
+            
         }
     }
 }

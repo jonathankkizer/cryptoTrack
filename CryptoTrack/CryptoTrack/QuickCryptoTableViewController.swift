@@ -149,6 +149,7 @@ class QuickCryptoTableViewController: UITableViewController {
             if indexPath.row == 0 {
                 let sortedCurrencies = cryptoCurrencies.sorted(by: { $0.percentChange1h! > $1.percentChange1h!})
                 let cell = tableView.dequeueReusableCell(withIdentifier: "topPerformer", for: indexPath) as! topPerformerTableViewCell
+                cell.selectionStyle = .none
                 cell.oneCurr.text = sortedCurrencies[0].name
                 cell.onePctChg.text = "\(sortedCurrencies[0].percentChange1h!)" + "%"
                 cell.twoCurr.text = sortedCurrencies[1].name
@@ -159,8 +160,10 @@ class QuickCryptoTableViewController: UITableViewController {
                 return cell
                 
             } else {
+                
                 // displays the currency listings
                 let cell = tableView.dequeueReusableCell(withIdentifier: "cryptoCellid", for: indexPath) as! CryptoTableViewCell
+                cell.selectionStyle = .none
                 let currentCurrency = cryptoCurrencies[indexPath.row-1]
                 cell.currencyName?.text = currentCurrency.name
                 cell.currencyID?.text = currentCurrency.symbol
