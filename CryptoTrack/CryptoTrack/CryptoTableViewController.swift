@@ -10,11 +10,9 @@ import UIKit
 import CryptoCurrencyKit
 
 let currency = UserDefaults().string(forKey: "currencyType")
-<<<<<<< Updated upstream
 public var cryptoCurrencyViewSafeToUnwrap: Bool? = false
 public var cryptoCurrencies = [Ticker]()
 public var userValue: Double = 0.0
-=======
 
 
 
@@ -33,7 +31,6 @@ extension Array {
 
 
 
->>>>>>> Stashed changes
 class CryptoTableViewController: UITableViewController {
 
     // cryptoCurrencies is array that contains the below cryptoCurrencyX objects; used to access later when drawing views, etc. with indexPath.row
@@ -212,16 +209,14 @@ class CryptoTableViewController: UITableViewController {
         cryptoCurrencies = [Ticker]()
         getCurrencies()
         self.title = "Currencies"
-<<<<<<< Updated upstream
         //self.getCurrencies()
         self.tableView.reloadData()
-=======
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
->>>>>>> Stashed changes
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -370,12 +365,5 @@ class CryptoTableViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    
-<<<<<<< Updated upstream
-=======
-    
-    
-    
-    
->>>>>>> Stashed changes
+
 }
