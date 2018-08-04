@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45340E6D1FA8C57400AE36CA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45340E6C1FA8C57400AE36CA /* LoginViewController.swift */; };
+		45340E6D1FA8C57400AE36CA /* LoginViewControllerFixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45340E6C1FA8C57400AE36CA /* LoginViewControllerFixed.swift */; };
 		7C9C2904882579358DB85DD3 /* Pods_CryptoTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287B7FA0748D713656D69C70 /* Pods_CryptoTrack.framework */; };
 		AB47F7B11FB638E600EAAD02 /* topPerformerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F7B01FB638E600EAAD02 /* topPerformerTableViewCell.swift */; };
-		AB47F7FB1FB8E90500EAAD02 /* createUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F7FA1FB8E90500EAAD02 /* createUserViewController.swift */; };
+		AB47F7FB1FB8E90500EAAD02 /* createUserViewControllerFixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47F7FA1FB8E90500EAAD02 /* createUserViewControllerFixed.swift */; };
 		AB49BBE01F9F9FCC00BF2483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB49BBDF1F9F9FCC00BF2483 /* AppDelegate.swift */; };
 		AB49BBE51F9F9FCC00BF2483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB49BBE31F9F9FCC00BF2483 /* Main.storyboard */; };
 		AB49BBEA1F9F9FCC00BF2483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB49BBE91F9F9FCC00BF2483 /* Assets.xcassets */; };
@@ -30,9 +30,9 @@
 
 /* Begin PBXFileReference section */
 		287B7FA0748D713656D69C70 /* Pods_CryptoTrack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoTrack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		45340E6C1FA8C57400AE36CA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		45340E6C1FA8C57400AE36CA /* LoginViewControllerFixed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerFixed.swift; sourceTree = "<group>"; };
 		AB47F7B01FB638E600EAAD02 /* topPerformerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topPerformerTableViewCell.swift; sourceTree = "<group>"; };
-		AB47F7FA1FB8E90500EAAD02 /* createUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createUserViewController.swift; sourceTree = "<group>"; };
+		AB47F7FA1FB8E90500EAAD02 /* createUserViewControllerFixed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createUserViewControllerFixed.swift; sourceTree = "<group>"; };
 		AB49BBDC1F9F9FCC00BF2483 /* CryptoTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB49BBDF1F9F9FCC00BF2483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB49BBE41F9F9FCC00BF2483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 				AB584E441FCCA8F6001A89FA /* QuickCryptoTableViewController.swift */,
 				AB584E3E1FCC8F63001A89FA /* SettingsViewController.swift */,
 				AB7E00A01FB8F29600C2EE3D /* userTableViewController.swift */,
-				AB47F7FA1FB8E90500EAAD02 /* createUserViewController.swift */,
+				AB47F7FA1FB8E90500EAAD02 /* createUserViewControllerFixed.swift */,
 				ABBF7B101FA7A03100190A15 /* CryptoTableViewController.swift */,
 				AB47F7B01FB638E600EAAD02 /* topPerformerTableViewCell.swift */,
 				ABFD3F531FA7ADB200FB51C0 /* CryptoTableViewCell.swift */,
@@ -101,7 +101,7 @@
 				AB6E8E951FCDDC6A00A3B88E /* userCoin.swift */,
 				AB8A3D5F1FB0DD0E00AC6D3D /* formatCurrency.swift */,
 				AB49BBDF1F9F9FCC00BF2483 /* AppDelegate.swift */,
-				45340E6C1FA8C57400AE36CA /* LoginViewController.swift */,
+				45340E6C1FA8C57400AE36CA /* LoginViewControllerFixed.swift */,
 				AB49BBE91F9F9FCC00BF2483 /* Assets.xcassets */,
 				AB49BBEB1F9F9FCC00BF2483 /* LaunchScreen.storyboard */,
 				AB49BBEE1F9F9FCC00BF2483 /* Info.plist */,
@@ -267,8 +267,12 @@
 				AB47F7B11FB638E600EAAD02 /* topPerformerTableViewCell.swift in Sources */,
 				AB6E8E9A1FCDF30700A3B88E /* DataStore.swift in Sources */,
 				AB584E3F1FCC8F63001A89FA /* SettingsViewController.swift in Sources */,
+<<<<<<< Updated upstream
 				AB99B0AB1FCE5C4000BD0EFD /* cryptoValueTableViewCell.swift in Sources */,
 				AB47F7FB1FB8E90500EAAD02 /* createUserViewController.swift in Sources */,
+=======
+				AB47F7FB1FB8E90500EAAD02 /* createUserViewControllerFixed.swift in Sources */,
+>>>>>>> Stashed changes
 				AB7E00A11FB8F29600C2EE3D /* userTableViewController.swift in Sources */,
 				AB6E8E961FCDDC6A00A3B88E /* userCoin.swift in Sources */,
 				ABFD3F541FA7ADB200FB51C0 /* CryptoTableViewCell.swift in Sources */,
@@ -276,7 +280,7 @@
 				AB584E451FCCA8F6001A89FA /* QuickCryptoTableViewController.swift in Sources */,
 				AB8A3D601FB0DD0E00AC6D3D /* formatCurrency.swift in Sources */,
 				AB49BBE01F9F9FCC00BF2483 /* AppDelegate.swift in Sources */,
-				45340E6D1FA8C57400AE36CA /* LoginViewController.swift in Sources */,
+				45340E6D1FA8C57400AE36CA /* LoginViewControllerFixed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

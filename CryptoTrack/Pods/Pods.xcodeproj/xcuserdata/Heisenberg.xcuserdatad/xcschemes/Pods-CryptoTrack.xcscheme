@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0900"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CDBB03FA6AF65B1E2A91200B39B6EF52"
+               BlueprintIdentifier = "43424E96FCF44FDB8496733D8161792B"
                BuildableName = "Pods_CryptoTrack.framework"
                BlueprintName = "Pods-CryptoTrack"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CDBB03FA6AF65B1E2A91200B39B6EF52"
+            BlueprintIdentifier = "43424E96FCF44FDB8496733D8161792B"
             BuildableName = "Pods_CryptoTrack.framework"
             BlueprintName = "Pods-CryptoTrack"
             ReferencedContainer = "container:Pods.xcodeproj">

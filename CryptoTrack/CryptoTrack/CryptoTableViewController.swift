@@ -13,6 +13,24 @@ let currency = UserDefaults().string(forKey: "currencyType")
 public var cryptoCurrencyViewSafeToUnwrap: Bool? = false
 public var cryptoCurrencies = [Ticker]()
 public var userValue: Double = 0.0
+
+
+
+var symbolArray = [UIImage]()
+
+extension Array {
+    public func toDictionary<Key: Hashable>(with selectKey: (Element) -> Key) -> [Key:Element] {
+        var dict = [Key:Element]()
+        for element in self {
+            dict[selectKey(element)] = element
+        }
+        return dict
+    }
+}
+
+
+
+
 class CryptoTableViewController: UITableViewController {
 
     // cryptoCurrencies is array that contains the below cryptoCurrencyX objects; used to access later when drawing views, etc. with indexPath.row
@@ -48,6 +66,8 @@ class CryptoTableViewController: UITableViewController {
     
     // calls out to cryptoCurrencyKit, and sets previously created cryptoCurrencyX equal to return results
     // then flips safeToUnwrap and reloads view; necessary because otherwise view attempts to load view which returns nil values
+    
+    
     func getCurrencies() {
         CryptoCurrencyKit.fetchTickers(limit: 25) { r in
             switch r {
@@ -117,6 +137,72 @@ class CryptoTableViewController: UITableViewController {
             }
         }
     }
+    @IBOutlet var currencySymbols: [UIImageView]!
+    
+    var symbols : [UIImage] = [
+        UIImage(named : "BTC.png")!,
+        UIImage(named : "ETH.png")!,
+        UIImage(named : "DASH.png")!,
+        UIImage(named : "ETC.png")!,
+        UIImage(named : "EOS.png")!,
+        UIImage(named : "LTC.png")!,
+        UIImage(named : "MIOTA.png")!,
+        UIImage(named : "NEM.png")!,
+        UIImage(named : "NEO.png")!,
+        UIImage(named : "OMG.png")!,
+        UIImage(named : "XLM.png")!,
+        UIImage(named : "XMR.png")!,
+        UIImage(named : "XRP.png")!
+    ]
+    var symbolArray : [UIImage] = [ #imageLiteral(resourceName: "BTC.png")
+        ,#imageLiteral(resourceName: "ETH.png"),#imageLiteral(resourceName: "DASH.png"),#imageLiteral(resourceName: "ETC.png"),#imageLiteral(resourceName: "EOS.png"),#imageLiteral(resourceName: "LTC.png"),#imageLiteral(resourceName: "MIOTA.png"),#imageLiteral(resourceName: "NEM.png"),#imageLiteral(resourceName: "NEO.png"),#imageLiteral(resourceName: "OMG.png"),#imageLiteral(resourceName: "XLM.png"),#imageLiteral(resourceName: "XMR.png"),#imageLiteral(resourceName: "XRP.png")]
+
+    
+    
+    
+    func getSymbols( symbolName : AnyObject){
+        var symbolName = symbolName
+        var symbols : [[String: Any]]{
+            let dict : [String: Any] = [
+                "BTC" : UIImage(named : "BTC.png")!,
+                "ETC" : UIImage(named : "ETH.png")!,
+                "DASH" : UIImage(named : "DASH.png")!,
+                "ETC" : UIImage(named : "ETC.png")!,
+                "EOS" : UIImage(named : "EOS.png")!,
+                "LTC" : UIImage(named : "LTC.png")!,
+                "MIOTA" : UIImage(named : "MIOTA.png")!,
+                "NEM" : UIImage(named : "NEM.png")!,
+                "NEO" : UIImage(named : "NEO.png")!,
+                "OMG" : UIImage(named : "OMG.png")!,
+                "XLM" : UIImage(named : "XLM.png")!,
+                "XMR" : UIImage(named : "XMR.png")!,
+                "XRP" : UIImage(named : "XRP.png")!
+                ]
+            
+            return [dict]
+        }
+        
+        print(symbols)
+        
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "cryptoCellid", for: IndexPath) as! CryptoTableViewCell
+        
+        /*
+        symbolArray.toDictionary { (#imageLiteral(resourceName: "BTC.png"):"BTC.png"), "BTC.png" -> Hashable in symbols
+            
+            } as! ((UIImage) -> String) -> [String : UIImage ]
+        
+        func convert(_ p: Any){
+            guard let self.symbolArray = p as? Dictionary<AnyHashable, Any> else{
+                print("cannot convert into dictionary")
+                return
+            }
+        */
+        }
+    
+        
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -125,12 +211,19 @@ class CryptoTableViewController: UITableViewController {
         self.title = "Currencies"
         //self.getCurrencies()
         self.tableView.reloadData()
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         userValue = calculateCryptoValue()
         self.tableView.reloadData()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -272,5 +365,5 @@ class CryptoTableViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    
+
 }

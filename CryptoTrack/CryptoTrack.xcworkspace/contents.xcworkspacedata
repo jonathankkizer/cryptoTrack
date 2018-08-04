@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CreateUserViewControllerFixed.swift">
-   </FileRef>
-   <FileRef
-      location = "group:LoginViewControllerFixed.swift">
-   </FileRef>
-   <FileRef
       location = "group:CryptoTrack.xcodeproj">
    </FileRef>
    <FileRef
